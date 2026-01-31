@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dniyrkkdwf3cb"]
+[gd_scene format=4 uid="uid://dniyrkkdwf3cb"]
 
 [ext_resource type="PackedScene" uid="uid://bwc28g513sfim" path="res://Example World/Objects/World/box_1.tscn" id="2_a2qm0"]
 [ext_resource type="PackedScene" uid="uid://bo6viygofawpl" path="res://Example World/Objects/World/target.tscn" id="3_11x65"]
@@ -20,6 +20,10 @@
 [ext_resource type="PackedScene" uid="uid://dwgt7gwe3gfyy" path="res://Player_Controller/Spawnable_Objects/Weapons/blasterQ.tscn" id="12_x6ydo"]
 [ext_resource type="Resource" uid="uid://dgayjkjx4mckc" path="res://Player_Controller/scripts/Weapon_State_Machine/Weapon_Resources/blasterQ.tres" id="13_xqfky"]
 [ext_resource type="Shader" uid="uid://kfuretb65505" path="res://Example World/Objects/World/world.tres" id="19_cthwv"]
+[ext_resource type="Texture2D" uid="uid://xyaei7r1oiq7" path="res://assets/tree_Tree Branch.png" id="21_qwr1n"]
+[ext_resource type="Texture2D" uid="uid://b6n73skym625b" path="res://assets/tree_Maple_Bark_2_SPEC.png" id="22_mjfr4"]
+[ext_resource type="PackedScene" uid="uid://52extstta2df" path="res://assets/tree2.glb" id="23_dsok1"]
+[ext_resource type="PackedScene" uid="uid://0r5ksefdebyd" path="res://assets/tree3.glb" id="24_kxg2o"]
 
 [sub_resource type="Environment" id="Environment_8purj"]
 
@@ -53,24 +57,6 @@ weapon = ExtResource("13_xqfky")
 current_ammo = 2
 reserve_ammo = 4
 
-[sub_resource type="Resource" id="Resource_gqn1n"]
-resource_local_to_scene = true
-script = ExtResource("5_khw4j")
-weapon = ExtResource("6_fjphs")
-current_ammo = 30
-
-[sub_resource type="Resource" id="Resource_qwr1n"]
-resource_local_to_scene = true
-script = ExtResource("5_khw4j")
-weapon = ExtResource("6_fjphs")
-current_ammo = 30
-
-[sub_resource type="Resource" id="Resource_mjfr4"]
-resource_local_to_scene = true
-script = ExtResource("5_khw4j")
-weapon = ExtResource("6_fjphs")
-current_ammo = 30
-
 [sub_resource type="Resource" id="Resource_dsok1"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
@@ -86,20 +72,20 @@ current_ammo = 30
 [sub_resource type="Resource" id="Resource_r8gv3"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("4_u04vv")
-current_ammo = 5
+weapon = ExtResource("6_fjphs")
+current_ammo = 30
 
 [sub_resource type="Resource" id="Resource_glh4a"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("4_u04vv")
-current_ammo = 5
+weapon = ExtResource("6_fjphs")
+current_ammo = 30
 
 [sub_resource type="Resource" id="Resource_q7at6"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("4_u04vv")
-current_ammo = 5
+weapon = ExtResource("6_fjphs")
+current_ammo = 30
 
 [sub_resource type="Resource" id="Resource_bcyq2"]
 resource_local_to_scene = true
@@ -116,20 +102,20 @@ current_ammo = 5
 [sub_resource type="Resource" id="Resource_fst20"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("8_38tmb")
-current_ammo = 30
+weapon = ExtResource("4_u04vv")
+current_ammo = 5
 
 [sub_resource type="Resource" id="Resource_mt2ev"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("8_38tmb")
-current_ammo = 30
+weapon = ExtResource("4_u04vv")
+current_ammo = 5
 
 [sub_resource type="Resource" id="Resource_tu1aa"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("8_38tmb")
-current_ammo = 30
+weapon = ExtResource("4_u04vv")
+current_ammo = 5
 
 [sub_resource type="Resource" id="Resource_1vrs5"]
 resource_local_to_scene = true
@@ -140,20 +126,20 @@ current_ammo = 30
 [sub_resource type="Resource" id="Resource_wy8i3"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("10_xtha2")
-current_ammo = 9
+weapon = ExtResource("8_38tmb")
+current_ammo = 30
 
 [sub_resource type="Resource" id="Resource_gt2t5"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("10_xtha2")
-current_ammo = 9
+weapon = ExtResource("8_38tmb")
+current_ammo = 30
 
 [sub_resource type="Resource" id="Resource_kuldh"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
-weapon = ExtResource("10_xtha2")
-current_ammo = 9
+weapon = ExtResource("8_38tmb")
+current_ammo = 30
 
 [sub_resource type="Resource" id="Resource_choul"]
 resource_local_to_scene = true
@@ -162,6 +148,24 @@ weapon = ExtResource("10_xtha2")
 current_ammo = 9
 
 [sub_resource type="Resource" id="Resource_natk6"]
+resource_local_to_scene = true
+script = ExtResource("5_khw4j")
+weapon = ExtResource("10_xtha2")
+current_ammo = 9
+
+[sub_resource type="Resource" id="Resource_hqebh"]
+resource_local_to_scene = true
+script = ExtResource("5_khw4j")
+weapon = ExtResource("10_xtha2")
+current_ammo = 9
+
+[sub_resource type="Resource" id="Resource_j3qt0"]
+resource_local_to_scene = true
+script = ExtResource("5_khw4j")
+weapon = ExtResource("10_xtha2")
+current_ammo = 9
+
+[sub_resource type="Resource" id="Resource_apwex"]
 resource_local_to_scene = true
 script = ExtResource("5_khw4j")
 weapon = ExtResource("10_xtha2")
@@ -186,6 +190,84 @@ uv1_triplanar = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yv2ts"]
 albedo_texture = ExtResource("12_7osse")
 uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m3yaf"]
+resource_name = "Tree Branch"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("21_qwr1n")
+roughness = 0.8612167
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_df8vo"]
+_surfaces = [{
+"aabb": AABB(-0.27999994, -0.017884837, -1, 0.69007957, 0.04756368, 1),
+"format": 34896613377,
+"index_count": 90,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMAAQADAAQABQABAAQABQAGAAEABwAGAAUABwAFAAgABgAJAAoABgAHAAkABwALAAkABwAMAAsADAAHAA0ADQAHAA4ADAANAA8ADQAQAA8AEQAQAA0AEAARABIAEgARABMAEAAUABUAEAASABQAFAASABYAEgAXABYAEgAYABcAFwAYABkAGgAYABIAGAAaABsAGwAaABwAGgASAB0AHQASAB4AGgAdAB8A"),
+"name": "Tree Branch",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("OKxpRocDAAAWUht6kDAAAJdbQmAAAAAA+aMberctAAD7p0JgMjMAANPG+WN3RQAANVEbek01AABf+3d71WMAALT5/97zMwAAiAV+gRJtAAAAAEJgwVMAAFIOQmAFhAAAgjj9iMiQAADXykJgmZkAAP//foFrbwAADEMFD5+gAABfWgUP77MAADC/BQ9UqwAAoeBCYMzMAACH7UJg4sIAALtdQmA0ygAAr0RCYBfEAABeXUJgzMwAAPtaza0W4AAAXjRzskXoAAAqOM2tmtYAAOAjc7Ls/wAAXAz//6XcAAB7AHOymvYAAPuTW4R09gAA+cEAAPzjAADHeUJg//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1mcwy"]
+resource_name = "tree_Tree Branch_004"
+_surfaces = [{
+"aabb": AABB(-0.27999994, -0.017884837, -1, 0.69007957, 0.04756368, 1),
+"attribute_data": PackedByteArray("4arTAnNRMzPhWgAAs6JZMKymMzPJC27aHyP//wAArPZ8M1foIoMZ9tR4///h3szM9MD540Zazt26N1LUo1zMzELJmJmqWeish0KZmbO9TqTh3szMruviwgBdNMqjXMzMJkQXxBv+ZWY2DgWEfQVlZlU4FpFCyZiZAP6+aIdCmZmTUO83fQVlZgAAwVMb/mVmGMBtRf//JjxzUTMzrKYzMw=="),
+"format": 34896613399,
+"index_count": 90,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMAAQADAAQABQAGAAcACAAGAAUABgAJAAoABgALAAkABgAIAAsACQALAAwACwAIAA0ADQAIAA4ACwANAA8AEAARABIAEwARABAAEQATABQAFAATABUAEQAUABYAFgAUABcAEQAWABgAGQAaABsAGQAcABoAHAAZAB0AHQAZAB4AHAAdAB8AIAAhACIAIAAjACEAIwAgACQAIwAkACUAJAAgACYAJAAmACcA"),
+"material": SubResource("StandardMaterial3D_m3yaf"),
+"name": "Tree Branch",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("OKxpRocD+sAWUht6kDD6wJdbQmAAAPvA+aMberct/MD7p0JgMjMBwVwM//+l3Ji+4CNzsuz/mr57AHOymvalvl40c7JF6Jq++5NbhHT2n77HeUJg//+dvqHgQmDMzJ2++cEAAPzjnb77Ws2tFuCXvio4za2a1q2+Xl1CYMzMnL7XykJgmZnRwV9aBQ/vs87BDEMFD5+g3sEwvwUPVKvNwaHgQmDMzN3Bh+1CYOLC88G7XUJgNMrNwV5dQmDMzM3Br0RCYBfE28Ff+3d71WN+wFIOQmAFhPS9iAV+gRJt972COP2IyJDxvdfKQmCZmfe9//9+gWtviMkMQwUPn6D/vTVRG3pNNVHAiAV+gRJtUsAAAEJgwVNtwF/7d3vVY3XA08b5Y3dFUsC0+f/e8zO+wBZSG3qQMFHA+6dCYDIzU8Ca/pt/m/7lfyn+OoBN/aqAqPoFgrD5qHus+Rl8mvlffqz5KXyj+UB9pfn7fKb5znym+dJ8xvipd5H5d3+n+cV8IPqKg9T/kn4o/HN3Hf0Hgjr8lHfl+Q9zFv0KgnH/IIEy9oiFSdRYlWL9f3rG/EB5K/4bfA75coP6uKOigfuldlL/goEv+yaDePJ4h4L6sXP2/21+MvYya9j70oKY+nGD")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_df8vo")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pdeqt"]
+resource_name = "Material.001"
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("22_mjfr4")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kad88"]
+_surfaces = [{
+"aabb": AABB(-14.832654, -1, -9.585451, 29.411652, 36.176563, 19.385252),
+"format": 34896613377,
+"index_count": 1140,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAwAEAAAABQADAAIABQAEAAMABQACAAYABAAHAAAABQAIAAQABAAIAAcACQAIAAUACQAFAAYACQAKAAgABwALAAAAAAALAAEACAAMAAcACAAKAAwACgAJAA0ACgANAAwACQAGAA0ADAAOAAcABwAOAAsADQAPAAwADAAPAA4ABgAQAA0ADQAQAA8ABgARABAAAgARAAYAAgABABEAEAASAA8ADwATAA4ADwASABMAEQAUABAAEAAUABIAAQAVABEAEQAVABQAAQAWABUACwAWAAEADgAXAAsACwAXABYADgATABcAFgAYABUAFwAZABYAFgAZABgAFwAaABkAEwAaABcAGgAbABkAEwAcABoAGgAdABsAHAAdABoAGQAbAB4AGQAeABgAEwAfABwAEwAgAB8AEgAgABMAHAAfACEAEgAiACAAIAAjAB8AJAAiABIAHAAhACQAJAAhACIAHwAlACEAHwAjACUAIQAmACIAIQAlACYAIgAnACAAIAAnACMAIgAmACcAFAAkABIAJAAoABwAFAApACQAHAAoAB0AJAAqACgAKQAqACQAKAArAB0AKgAsACgAKAAsACsAKgAtACwAKQAuACoALgAtACoALQAvACwAGAAuACkALgAwAC0AGAAeAC4AMAAxAC0ALQAxAC8AKQAyABgALAAvADMALAAzACsAKQA0ADIAFAA0ACkAGAAyADUAGAA1ABUAFQA2ABQAFAA2ADQAFQA1ADYANAA3ADIAMgA4ADUAMgA3ADgANQA5ADYANQA4ADkANgA6ADQANAA6ADcANgA5ADoAOAA7ADkAOgA8ADcANwA9ADgAOAA9ADsANwA8AD0AOQA7AD4AOQA+ADoAPQA+ADsAOgA+ADwAPQA8AD4APwBAAEEAQQBAAEIAPwBDAEAAQQBCADAAMABCADEAQgBEADEAMABFAEEAQgBGAEQAQABGAEIAMQBEAEcAMQBHAC8ARgBIAEQARABJAEcARABIAEkARgBKAEgARwBJAEsAQABMAEYATABKAEYARwBLAEwATABLAEoALwBHAEwALwBMAEAASABNAEkASQBOAEsASQBNAE4ASwBPAEoASwBOAE8ASgBQAEgASABQAE0ASgBPAFAATQBRAE4ATgBSAE8ATgBRAFIATwBTAFAATwBSAFMAUABUAE0ATQBUAFEAUABTAFQAUQBVAFIAUgBWAFMAUgBVAFYAUwBXAFQAUwBWAFcAVABYAFEAUQBYAFUAVABXAFgAVgBZAFcAWABaAFUAVQBbAFYAVgBbAFkAVQBaAFsAVwBZAFwAVwBcAFgAXABZAFsAWABcAFoAXABbAFoAQABdAC8ALwBdAF4ALwBeADMAQABfAF0AQwBfAEAAXQBgAF4AKwAzAEMAXwBhAF0AXQBhAGAAMwBeAGIAMwBiAEMAQwBiAF8AKwBDAD8AXgBjAGIAXgBgAGMAYgBkAF8AYgBjAGQAXwBkAGEAYABlAGMAYwBmAGQAYwBlAGYAZABnAGEAZABmAGcAYQBoAGAAYABoAGUAYQBnAGgAZQBpAGYAZgBqAGcAZgBpAGoAZwBrAGgAZwBqAGsAaABsAGUAZQBsAGkAaABrAGwAaQBtAGoAagBuAGsAagBtAG4AawBvAGwAawBuAG8AbABwAGkAaQBwAG0AbABvAHAAbQBxAG4AbgByAG8AbgBxAHIAbwBzAHAAbwByAHMAcAB0AG0AbQB0AHEAcABzAHQAcgB1AHMAdAB2AHEAcQB3AHIAcgB3AHUAcQB2AHcAcwB1AHgAcwB4AHQAdwB4AHUAdAB4AHYAdwB2AHgAGwB5AD8APwB5AHoAPwB6ACsAKwB6AHsAKwB7AB0AHQB7AHwAHQB8ABsAGwB8AHkAewB9AHwAegB+AHsAewB+AH0AeQB/AHoAegB/AH4AfACAAHkAfAB9AIAAeQCAAH8AfgCBAH0AfQCCAIAAfQCBAIIAgACDAH8AgACCAIMAfwCEAH4AfgCEAIEAfwCDAIQAgQCFAIIAggCGAIMAggCFAIYAgwCHAIQAgwCGAIcAhACIAIEAgQCIAIUAhACHAIgAhQCJAIYAhwCKAIgAiACLAIUAhQCLAIkAiACKAIsAhgCJAIwAhgCMAIcAjACJAIsAhwCMAIoAjACLAIoALgCNADAAMACNAEUALgCOAI0AHgCOAC4AjQCPAEUAjgCQAI0AjQCQAI8AjgCRAJAARQCPAJIAHgCTAI4AkwCRAI4ARQCSAJMAkwCSAJEAQQBFAJMAQQCTAB4AkACUAI8AjwCVAJIAjwCUAJUAkgCWAJEAkgCVAJYAkQCXAJAAkACXAJQAkQCWAJcAlACYAJUAlQCZAJYAlQCYAJkAlgCaAJcAlgCZAJoAlwCbAJQAlACbAJgAlwCaAJsAmACcAJkAmgCdAJsAmwCeAJgAmACeAJwAmwCdAJ4AmQCcAJ8AmQCfAJoAngCfAJwAmgCfAJ0AngCdAJ8APwCgABsAGwCgAKEAGwChAB4APwCiAKAAQQCiAD8AHgCjAEEAQQCjAKIAHgChAKMAogCkAKAAoAClAKEAoACkAKUAoQCmAKMAoQClAKYAowCnAKIAogCnAKQAowCmAKcApACoAKUApQCpAKYApQCoAKkApgCqAKcApgCpAKoApwCrAKQApACrAKgApwCqAKsAqACsAKkAqQCtAKoAqQCsAK0AqgCuAKsAqgCtAK4AqwCvAKgAqACvAKwAqwCuAK8ArACwAK0ArQCxAK4ArQCwALEArgCyAK8ArgCxALIArwCzAKwArACzALAArwCyALMAsQC0ALIAswC1ALAAsAC2ALEAsQC2ALQAsAC1ALYAsgC0ALcAsgC3ALMAtgC3ALQAswC3ALUAtgC1ALcAIwC4ACUAJQC4ALkAJQC5ACYAIwC6ALgAJwC6ACMAJgC7ACcAJwC7ALoAJgC5ALsAugC8ALgAuQC9ALsAuwC+ALoAugC+ALwAuwC9AL4AuAC8AL8AuAC/ALkAvwC8AL4AuQC/AL0AvwC+AL0A"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 192,
+"vertex_data": PackedByteArray("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")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_q7v6p"]
+resource_name = "tree_Cube"
+_surfaces = [{
+"aabb": AABB(-14.832654, -1, -9.585451, 29.411652, 36.176563, 19.385252),
+"attribute_data": PackedByteArray("SqEAySOZaNFtnTnI45wC0nuUiao/l9mtXpOUrSOZJauY6ZXBDe5Yw6rqb8TR7aPAqve/h4D0FYKr926EAfHPgiz0eIgB8R6GZZy1xUqhAMltnTnIK6FCxlnoEZlo67eWaOtDmQDoz5XR7aPAwPF0ww3uWMNu8unAK6FCxqeks8hKoQDJXKW8xantuekT7lbygulX6k/yHvL99Q3MmOlJ1hry0MsW7W7WMJeGuKOVCsI9k0q4I5kEwsLxA7XX7aPA7u1TtcLxW8A/l9mtPZNKuF6TlK0wl4a4wPF0wxry0MsN7ljD/fUNzKeks8jjnALSSqEAyXugjNG37s3lifwj5GLu1uf5/LHh4qSe3gCaq+egoQTfPJ1U5/b7jqGr+H+xq/hsohb7d7Dw/2KiFvt3sPb7jqG+/rqwe6CM0UWkBNzjnALSvqeu20/yHvKC6az/E+5W8lPt//8/3Bbza+T//0HaWfRX5sX+1+1RspjpDcBD6mmy1+2jwGLu1ufo/fnlvu+56Yn8I+RH/tSSQPs4m0D7CZJH/gCc0ejokyPZtpH06OiR09i1k3Lqn5XT2LWT0ejok/ran5Um/s20/fVuxfz2mLUm/jfFSoihjNSJUpb/f/mLppEwmLjffPJX5sX+P9wW84Lp4v1Fn9bpaKXF9pmbXeo8qR/2D5E5xt6DYc+bjZfFV4c90JuNl8VcghzOPowWxN6DYc9urmWAOKi5jOqoo4LAsLmMV4c90P9/Tt/eg2HPqIPY35LzlJy08QGlAfEAnIj1wKSpiYDPqIPY31eHPdDnhlTfI5k25OCSc+6GlXHk75RN7ln4qKWM9DawiPXApKv49K/nhlTfhpVx5KiD2N8jmTbkiPXApAHxf7G08QGljPQ2sO+UTe5Jh6754JJz7lCJk/mQrLmMvKonkjioQo1DrceR4bY9gmSzbYzAsCWC4ba5jIaVceRpkXru/JJJ5OCSc+731MCSF9K1mhfSV5Kg05SaQ63HkWi1Ipm8qieSvbcYmdGF9IIKgK2L/38WgtGF+YvSrriQvbcYmUOtx5GauUCYivxVnGf89qDm+zecivwHoUmHrvn/f6P/J4Zi+XuA6f9QiZP5e4Dp/0mHrvlDgf//vbcYmcGvbaBotSKZl7BtoIr8B6E3/PqgZ/z2oCX8D6GXsG2gOKhwo8GvbaBnqGujVfP5scLxNrbC8YixJ/I+tub7N5w3/PqgKPtvnGf89qCmkTCY/3+gn9SJUpYphyaiPKkf9iOZ//9opcX2vpzE/9ijqIc7l/eRz6Gqho6aSJI4qGCHjppIktijqIfNnlGRat/HleHl6qD825+VAOgGoY6aSJKRoCGcO5f3kVek/ZsM1bWa09jij9PYopn31DWRzZ5RkVek/ZuOmkiSOKiqmkG/pohYusiQWLplhy6+RpL825+V7+PEodPY+pbh5eqgGOYAsjXhmb043n+xGObwveGV24P7kR2O+5H/g2OUA477yzKJdr9ukQfK+okswPqQkMEngQfK+ol2v6GB+8syiQDoBqGh4Jao4eXqoHviB6kkw/9/+8syiZDBJ4HnzASIsd6n10HaRdsN3gPX79rO23viB6m52SqxoeCWqHzafLGh4Jao09h/sZbeaam52SqxUroAheG2/IvhtkSDfbi5jCj7AJzg+g+hq/g2nCj7D6E9k9m6i5KIwYaSPrs9k//APZORtPqRyrn7kdizPZPZuoaSPrtrkgrCQZLIu4uSiMEm6RrcYekZ3BjpItxJ6RPcGehG1xjpItxh55bXJuka3O/aztuf3hPkQdpF27HeHuRh6RzXJuka3BnoRtdJ6RPcmY+Xwz6MFsRCjgrCm42XxS2TfsSbjZfFmY+Xww+ROcY8nVTnmZtd6gCaq+dFn9bpCJ0hnCekA6YjmYueOKi1o+u+RpKlumiYpbr/kkG/vJfT2FmvY8AitEDV5Kx0xCm2Yeed2MTjkuOL4hzYYece5AHxQ5kA6L6j9e3HmSXrK6PK4Zq/UOPJxzje8L2/5kHJe+Q3wL/mQcnK4Zq/mOn1ye+OQIQmi/mLJosMhUiNcItBv7yX4LolpKW6aJhOvnijJesro8vuf7EA6L6jAfHpsJjp9ck43sDVv+ZByUXgbtY1/tqKs/zDkcf8loo1/gmSnJAkhUiNcIvvjkCEX47oiyaL7IMXivmLn4nbhBuLeYufiduE8odfi9GF7IMXivmLF/sa6q37iPA8+fDqDfxS8GHpx9xh55Xjkeci3GHpHuTQ8E6REe9DmRHv75EB8bqY+PBciYTvTpGE75KJAfEakWX8WvCt+4jwDfxS8AX8kfBl/FzqDfxS8Bf7Gupl/Frw4fpqgor6eIjK+e2C2PpgiMr57YIZ+lOIq/dqgor6eIg43tm609iIyEXbaLvS2qbHTN1/sUXbaLvd2QiyON7ZujXVsI+G2MGFhtjij/fUgYUOw27WV9QG33a/8tg+2K/cFcPEwnXFC8l2vxDCGsnsyD7Yr9yK1iHrV9QG30HaEOp0xCm2dr8QwmPAIrQVw8TC746xpKOP6bFmi/ej95EMszyOlrrJjgrCZosmuhqQtsH3kQyzZosmuqOP6bE8jpa60tqmx9fbFc/T2IjION7NzkHaEOoN0HPxitYh69bTM/E9k5OtBJJWswSSHa0yk9izON7NzpzZH9bX2xXPqNpu1tbTM/GeyrX5DdBz8RfM9/kayezIW8yt0HXFC8nfzU/QPZOopiiS5awHkmamaJL5rBfM9/l2v43/nsq1+cXA///fzU/QeNdu1lvMrdDT2OfVs/xkikr7CZJA++OKs/x2kSiS5axOkh2tB5IRrWiS+axV8yC2p/OIsa30y7VV85ixa+76kITvx4yE706RQO+3jK/8G4Rk/GSKQPtGhK/8VYo4qLWj2KAVsyekA6Z0pNOyP9wW84LpHuS433zy/+Ws5D2Teql9ljyacpaJqj2TOpmL4kXYsd5H47HeQteL4h7kEq6nsuqv5LrZqluyU7MHu8Crr6XZqluyOKhwoxKup7K9tiWktrxvslOznaRBv1OyZou4ov9/k67phyaipoK1rvaKQrZhivy9XoiZtmaLzL1Bv1OyU7M8ura8b7LetZW6poK1rl6Imbb/f5Ou9opCtnSk07IjmXW62KAVs9WcU7qMqY7B3amLxTioH8FcqrXF1ZxTuo2hacEjmXW6BaP3wFOzB7s4qB/B6q/kuoypjsHetZW6j7NGwVOzPLqStHzBe9KSrBDS5KwS0pise9LarJK0fMGys6DFj7NGwRK0tcVmi8y9+IoKwmGK/L1ai/fBBaP3wCCgtcWNoWnBraCJxUWkBNztnpDed6Fy26ChBN9c7vqT9OjokVru0JHR6OiTwukS53nuXNe37s3lgulA2L6nrts6shvj4qSe3nS1VOC+p67boKEE30WkBNzipJ7ewukS52Lu1ueC6SLpt+7N5ZHJVpp2v+WgjsRKmHbEvKE8+SbuT/Jj9Sz2XO1i9Sr2DNKxk47ESphEzW6RkclWmobVtZrD1aOje9JSm9PYB6PbmEuffZaJqn2Wop6amDiqYvUq9nj2eP5P8mP1PPn//9PYB6N70uSsw9WjoyvVa6t0tVTga7v65zqyG+N2v1fmp5OrmH2W0I59ljqZbpWQjna/V+Y0uvTya7v656q9ivJ2xLyhi87krHa/5aAM0qus4/J4iA352pQB8V+JQPvvlAeSrqXmkmamB5JbpuWSt6VA+++UAfHqmw352pTW8QCc+5Fal26VkI6nk6uYyZQdjsLxo8Dn8j622/QhwMLxebYYkz6ZP5ImoqaRXZoYkyihQOkWs2bmrb0Y5tOyQOnwvfTo6JH85F6EWu7Qkc7fzIQ4/27F/fXm0Mb7c8U3+dvQBPzQ+QL/rP88+Wz4/////6PQ74Gu0dGK58zShKLUhYn//5rzPPls+I78kfAE/ND5N/nb0E7+LNb99ebQOP9u1vPNJJEYzR+RI87UkOfMbpGo1IGKI87UkKLUhYnzzSSRGfzL+P////8E/ND51/+q/6LUhYkYzR+RrtHRiiPO1JA="),
+"format": 34896613399,
+"index_count": 1140,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAAPAAwAEAARAA8AEgATABQAEgAVABMAFgAXABgAFgAZABcAGgAbABwAGgAdABsAHgAfACAAHgAhAB8AIgAjACQAIgAlACMAJgAnACgAJgApACcAKgArACwAKgAtACsALgAvADAALgAxAC8AMgAzADQAMgA1ADMANgA3ADgANgA5ADcAOgA7ADwAOgA9ADsAPgA/AEAAPgBBAD8AQgBDAEQAQgBFAEMARgBHAEgARgBJAEcASgBLAEwASgBNAEsATgBPAFAATgBRAE8AUgBTAFQAUgBVAFMAVgBXAFgAVgBZAFcAWgBbAFwAWgBdAFsAXgBfAGAAXgBhAF8AYgBjAGQAYgBlAGMAZgBnAGgAZgBpAGcAagBrAGwAagBtAGsAbgBvAHAAbgBxAG8AcgBzAHQAcgB1AHMAdgB3AHgAdgB5AHcAegB7AHwAegB9AHsAfgB/AIAAfgCBAH8AggCDAIQAggCFAIMAhgCHAIgAhgCJAIcAigCLAIwAigCNAIsAjgCPAJAAjgCRAI8AkgCTAJQAkgCVAJMAlgCXAJgAlgCZAJcAmgCbAJwAmgCdAJsAngCfAKAAngChAJ8AogCjAKQAogClAKMApgCnAKgApgCpAKcAqgCrAKwAqgCtAKsArgCvALAArgCxAK8AsgCzALQAsgC1ALMAtgC3ALgAtgC5ALcAugC7ALwAugC9ALsAvgC/AMAAvgDBAL8AwgDDAMQAwgDFAMMAxgDHAMgAxgDJAMcAygDLAMwAygDNAMsAzgDPANAAzgDRAM8A0gDTANQA0gDVANMA1gDXANgA1gDZANcA2gDbANwA2gDdANsA3gDfAOAA3gDhAN8A4gDjAOQA4gDlAOMA5gDnAOgA5gDpAOcA6gDrAOwA6gDtAOsA7gDvAPAA7gDxAO8A8gDzAPQA8gD1APMA9gD3APgA9gD5APcA+gD7APwA+gD9APsA/gD/AAAB/gABAf8AAgEDAQQBAgEFAQMBBgEHAQgBBgEJAQcBCgELAQwBCgENAQsBDgEPARABDgERAQ8BEgETARQBEgEVARMBFgEXARgBFgEZARcBGgEbARwBGgEdARsBHgEfASABHgEhAR8BIgEjASQBIgElASMBJgEnASgBJgEpAScBKgErASwBKgEtASsBLgEvATABLgExAS8BMgEzATQBMgE1ATMBNgE3ATgBNgE5ATcBOgE7ATwBOgE9ATsBPgE/AUABPgFBAT8BQgFDAUQBQgFFAUMBRgFHAUgBRgFJAUcBSgFLAUwBSgFNAUsBTgFPAVABTgFRAU8BUgFTAVQBUgFVAVMBVgFXAVgBVgFZAVcBWgFbAVwBWgFdAVsBXgFfAWABXgFhAV8BYgFjAWQBYgFlAWMBZgFnAWgBZgFpAWcBagFrAWwBagFtAWsBbgFvAXABbgFxAW8BcgFzAXQBcgF1AXMBdgF3AXgBdgF5AXcBegF7AXwBegF9AXsBfgF/AYABfgGBAX8BggGDAYQBggGFAYMBhgGHAYgBhgGJAYcBigGLAYwBigGNAYsBjgGPAZABjgGRAY8BkgGTAZQBkgGVAZMBlgGXAZgBlgGZAZcBmgGbAZwBmgGdAZsBngGfAaABngGhAZ8BogGjAaQBogGlAaMBpgGnAagBpgGpAacBqgGrAawBqgGtAasBrgGvAbABrgGxAa8BsgGzAbQBsgG1AbMBtgG3AbgBtgG5AbcBugG7AbwBugG9AbsBvgG/AcABvgHBAb8BwgHDAcQBwgHFAcMBxgHHAcgBxgHJAccBygHLAcwBygHNAcsBzgHPAdABzgHRAc8B0gHTAdQB0gHVAdMB1gHXAdgB1gHZAdcB2gHbAdwB2gHdAdsB3gHfAeAB3gHhAd8B4gHjAeQB4gHlAeMB5gHnAegB5gHpAecB6gHrAewB6gHtAesB7gHvAfAB7gHxAe8B8gHzAfQB8gH1AfMB9gH3AfgB9gH5AfcB+gH7AfwB+gH9AfsB/gH/AQAC/gEBAv8BAgIDAgQCAgIFAgMCBgIHAggCBgIJAgcCCgILAgwCCgINAgsCDgIPAhACDgIRAg8CEgITAhQCEgIVAhMCFgIXAhgCFgIZAhcCGgIbAhwCGgIdAhsCHgIfAiACHgIhAh8CIgIjAiQCIgIlAiMCJgInAigCJgIpAicCKgIrAiwCKgItAisCLgIvAjACLgIxAi8CMgIzAjQCMgI1AjMCNgI3AjgCNgI5AjcCOgI7AjwCOgI9AjsCPgI/AkACPgJBAj8CQgJDAkQCQgJFAkMCRgJHAkgCRgJJAkcCSgJLAkwCSgJNAksCTgJPAlACTgJRAk8CUgJTAlQCUgJVAlMCVgJXAlgCVgJZAlcCWgJbAlwCWgJdAlsCXgJfAmACXgJhAl8CYgJjAmQCYgJlAmMCZgJnAmgCZgJpAmcCagJrAmwCagJtAmsCbgJvAnACbgJxAm8CcgJzAnQCcgJ1AnMCdgJ3AngCdgJ5AncCegJ7AnwCegJ9AnsCfgJ/AoACfgKBAn8CggKDAoQCggKFAoMChgKHAogChgKJAocCigKLAowCigKNAosCjgKPApACjgKRAo8CkgKTApQCkgKVApMClgKXApgClgKZApcCmgKbApwCmgKdApsCngKfAqACngKhAp8CogKjAqQCogKlAqMCpgKnAqgCpgKpAqcCqgKrAqwCqgKtAqsCrgKvArACrgKxAq8CsgKzArQCsgK1ArMCtgK3ArgCtgK5ArcCugK7ArwCugK9ArsCvgK/AsACvgLBAr8CwgLDAsQCwgLFAsMCxgLHAsgCxgLJAscCygLLAswCygLNAssCzgLPAtACzgLRAs8C0gLTAtQC0gLVAtMC1gLXAtgC1gLZAtcC2gLbAtwC2gLdAtsC3gLfAuAC3gLhAt8C4gLjAuQC4gLlAuMC5gLnAugC5gLpAucC6gLrAuwC6gLtAusC7gLvAvAC7gLxAu8C8gLzAvQC8gL1AvMC"),
+"material": SubResource("StandardMaterial3D_pdeqt"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(1.9716374, 2, 0, 0),
+"vertex_count": 758,
+"vertex_data": PackedByteArray("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")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_kad88")
 
 [node name="World" type="Node3D" unique_id=12904798 groups=["World"]]
 
@@ -318,79 +400,79 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.904
 
 [node name="blasterI_Clip" parent="ammo" unique_id=1580637849 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581563, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581563, -5.97109e-08, 11.9669, 2.51447, -9.74606)
-weapon = SubResource("Resource_gqn1n")
+weapon = SubResource("Resource_dsok1")
 
 [node name="blasterI_Clip2" parent="ammo" unique_id=1645577097 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8789, 2.51447, -9.48588)
-weapon = SubResource("Resource_qwr1n")
+weapon = SubResource("Resource_kxg2o")
 
 [node name="blasterI_Clip3" parent="ammo" unique_id=96817618 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8524, 2.51447, -9.10553)
-weapon = SubResource("Resource_mjfr4")
+weapon = SubResource("Resource_r8gv3")
 
 [node name="blasterI_Clip4" parent="ammo" unique_id=741318462 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8524, 2.51447, -8.98027)
-weapon = SubResource("Resource_dsok1")
+weapon = SubResource("Resource_glh4a")
 
 [node name="blasterI_Clip5" parent="ammo" unique_id=1888860989 instance=ExtResource("9_764ue")]
 transform = Transform3D(-0.0581562, 0.998308, -1.59995e-08, 5.86793e-08, 1.9445e-08, 1, 0.998308, 0.0581562, -5.97109e-08, 11.8353, 2.51447, -9.26194)
-weapon = SubResource("Resource_kxg2o")
+weapon = SubResource("Resource_q7at6")
 
 [node name="blasterN_Clip" parent="ammo" unique_id=1252574722 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8557, 2.41896, -8.45054)
-weapon = SubResource("Resource_r8gv3")
+weapon = SubResource("Resource_bcyq2")
 
 [node name="blasterN_Clip2" parent="ammo" unique_id=2036246138 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -8.30067)
-weapon = SubResource("Resource_glh4a")
+weapon = SubResource("Resource_21bmr")
 
 [node name="blasterN_Clip3" parent="ammo" unique_id=1138910028 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -8.15514)
-weapon = SubResource("Resource_q7at6")
+weapon = SubResource("Resource_fst20")
 
 [node name="blasterN_Clip4" parent="ammo" unique_id=1958002130 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -7.98603)
-weapon = SubResource("Resource_bcyq2")
+weapon = SubResource("Resource_mt2ev")
 
 [node name="blasterN_Clip5" parent="ammo" unique_id=147875040 instance=ExtResource("9_qorrx")]
 transform = Transform3D(-0.5, 0.866025, 4.37114e-08, 5.97108e-08, -1.59995e-08, 1, 0.866025, 0.5, -4.37114e-08, 11.8817, 2.45091, -7.80583)
-weapon = SubResource("Resource_21bmr")
+weapon = SubResource("Resource_tu1aa")
 
 [node name="blasterL_Clip" parent="ammo" unique_id=1940222987 instance=ExtResource("11_xavrm")]
 transform = Transform3D(-0.451749, 0.892145, 1.27005e-08, 5.97109e-08, 1.59995e-08, 1, 0.892145, 0.451749, -6.04985e-08, 11.9947, 2.48029, -7.47362)
-weapon = SubResource("Resource_fst20")
+weapon = SubResource("Resource_1vrs5")
 
 [node name="blasterL_Clip2" parent="ammo" unique_id=542211580 instance=ExtResource("11_xavrm")]
 transform = Transform3D(0.45382, 0.891093, -4.59471e-08, 1.59995e-08, -5.97109e-08, -1, -0.891093, 0.45382, -4.1355e-08, 11.9522, 2.44837, -7.28242)
-weapon = SubResource("Resource_mt2ev")
+weapon = SubResource("Resource_wy8i3")
 
 [node name="blasterL_Clip3" parent="ammo" unique_id=1945145516 instance=ExtResource("11_xavrm")]
 transform = Transform3D(0.5, 0.866025, -4.37114e-08, 1.59995e-08, -5.97109e-08, -1, -0.866025, 0.5, -4.37114e-08, 11.8852, 2.49294, -7.05531)
-weapon = SubResource("Resource_tu1aa")
+weapon = SubResource("Resource_gt2t5")
 
 [node name="blasterL_Clip4" parent="ammo" unique_id=997665499 instance=ExtResource("11_xavrm")]
 transform = Transform3D(-0.258819, 0.965926, -7.96526e-15, 5.97108e-08, 1.59995e-08, 1, 0.965926, 0.258819, -6.18172e-08, 11.8581, 2.5402, -6.8148)
-weapon = SubResource("Resource_1vrs5")
+weapon = SubResource("Resource_kuldh")
 
 [node name="blasterM_clip" parent="ammo" unique_id=412695216 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.86928)
-weapon = SubResource("Resource_wy8i3")
+weapon = SubResource("Resource_choul")
 
 [node name="blasterM_clip2" parent="ammo" unique_id=1153004724 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.62425)
-weapon = SubResource("Resource_gt2t5")
+weapon = SubResource("Resource_natk6")
 
 [node name="blasterM_clip3" parent="ammo" unique_id=871802772 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.32416)
-weapon = SubResource("Resource_kuldh")
+weapon = SubResource("Resource_hqebh")
 
 [node name="blasterM_clip4" parent="ammo" unique_id=1529916835 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -5.06811)
-weapon = SubResource("Resource_choul")
+weapon = SubResource("Resource_j3qt0")
 
 [node name="blasterM_clip5" parent="ammo" unique_id=955546150 instance=ExtResource("11_7y05e")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.7864, 2.51904, -4.82932)
-weapon = SubResource("Resource_natk6")
+weapon = SubResource("Resource_apwex")
 
 [node name="Player_Character" parent="." unique_id=1762646316 instance=ExtResource("10_nucft")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.9414, 2.36574, 6.10105)
@@ -469,11 +551,6 @@ material = SubResource("StandardMaterial3D_yv2ts")
 [node name="CSGBox3D13" type="CSGBox3D" parent="LevelGeometry" unique_id=604596385]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.9315, 2.36819, 12.5924)
 size = Vector3(2, 2, 14)
-material = SubResource("StandardMaterial3D_yv2ts")
-
-[node name="CSGBox3D15" type="CSGBox3D" parent="LevelGeometry" unique_id=1564974467]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.9315, 11.6163, 3.32557)
-size = Vector3(9.26416, 0.80957, 14)
 material = SubResource("StandardMaterial3D_yv2ts")
 
 [node name="CSGBox3D14" type="CSGBox3D" parent="LevelGeometry" unique_id=19902989]
@@ -564,11 +641,6 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.931
 size = Vector3(2, 2, 14)
 material = SubResource("StandardMaterial3D_yv2ts")
 
-[node name="CSGBox3D15" type="CSGBox3D" parent="ShadowGeometry" unique_id=1793650670]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.9315, 11.6163, 3.32557)
-size = Vector3(9.26416, 0.80957, 14)
-material = SubResource("StandardMaterial3D_yv2ts")
-
 [node name="CSGBox3D14" type="CSGBox3D" parent="ShadowGeometry" unique_id=835026907]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.0214, 3.44817, 12.557)
 operation = 2
@@ -614,3 +686,1521 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33112, 3.06818, 19.9151)
 
 [node name="box10" parent="physics_objects" unique_id=769775619 instance=ExtResource("2_a2qm0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1989, 3.06818, 19.9151)
+
+[node name="tree" type="Node3D" parent="." unique_id=1951355445]
+transform = Transform3D(0.43496698, 0, 0, 0, 0.43496698, 0, 0, 0, 0.43496698, -2.7038834, 5.340863, -17.468061)
+
+[node name="Tree Branch" type="MeshInstance3D" parent="tree" unique_id=764993566]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 29.689678, 4.751619, 0.8682075)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Cube" type="MeshInstance3D" parent="tree" unique_id=119478130]
+mesh = SubResource("ArrayMesh_q7v6p")
+skeleton = NodePath("")
+
+[node name="Tree Branch2" type="MeshInstance3D" parent="tree/Cube" unique_id=1864520977]
+transform = Transform3D(-5.3310566, 3.6865017, -1.2277519, -1.6169264, -4.0001736, -4.990189, -3.5331593, -3.7317772, 4.1362367, -2.1788502, 12.948931, -0.46513748)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch3" type="MeshInstance3D" parent="tree/Cube" unique_id=22135474]
+transform = Transform3D(-5.267983, 3.8706188, 0.8856832, 3.080996, 4.912864, -3.144678, -2.5047128, -2.0975814, -5.730998, -2.3091726, 16.055733, -0.08037996)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch4" type="MeshInstance3D" parent="tree/Cube" unique_id=1496080987]
+transform = Transform3D(2.2617497, 4.5914764, -4.1618047, -4.9251285, -1.3569882, -4.1736646, -3.761036, 4.5381413, 2.9627137, -2.2317872, 18.54946, 0.99731314)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch5" type="MeshInstance3D" parent="tree/Cube" unique_id=4808801]
+transform = Transform3D(-0.5454665, 4.3683553, -4.9130116, 5.825296, -1.9639786, -2.3930035, -3.047318, -4.5362997, -3.6950755, -1.3712041, 12.974365, -0.22189112)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch6" type="MeshInstance3D" parent="tree/Cube" unique_id=584776910]
+transform = Transform3D(1.0790939, 6.414002, 1.1017826, -3.5149424, 1.5143274, -5.3730597, -5.4770894, 0.29185873, 3.6652534, -3.1497831, 11.164422, -0.8430369)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch7" type="MeshInstance3D" parent="tree/Cube" unique_id=547295815]
+transform = Transform3D(-3.42487, -2.9835615, 4.7839727, -1.27593, -5.042083, -4.0579777, 5.491813, -3.0320868, 2.0406358, -1.1762924, 12.819524, -0.9526439)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch8" type="MeshInstance3D" parent="tree/Cube" unique_id=1766645378]
+transform = Transform3D(-2.0092084, -1.4150919, 6.121962, -6.224841, 1.3236043, -1.7370223, -0.8557188, -6.305824, -1.7384356, -6.348333, 22.732786, 3.3310442)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch9" type="MeshInstance3D" parent="tree/Cube" unique_id=840425870]
+transform = Transform3D(-6.5706697, 0.39553353, -0.43322435, 0.2158342, 6.1600366, 2.3505735, 0.54547745, 2.3270872, -6.148573, -3.435657, 20.528667, 2.7860518)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch10" type="MeshInstance3D" parent="tree/Cube" unique_id=1493667880]
+transform = Transform3D(-4.5263877, 4.1449637, -2.4184575, 2.2796087, -1.068339, -6.0975304, -4.222919, -5.0195384, -0.699305, -5.1078467, 22.432085, 4.3482046)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch11" type="MeshInstance3D" parent="tree/Cube" unique_id=1706421591]
+transform = Transform3D(0.068742804, -6.5813756, 0.4456598, 5.13471, -0.2263959, -4.1353755, 4.140998, 0.38997838, 5.120341, -6.348333, 22.732786, 3.3310442)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch12" type="MeshInstance3D" parent="tree/Cube" unique_id=149296464]
+transform = Transform3D(2.487737, -0.5827459, 6.081891, 3.8995376, 5.2067103, -1.0961782, -4.7034664, 4.008542, 2.307991, -3.435657, 20.528667, 2.7860518)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch13" type="MeshInstance3D" parent="tree/Cube" unique_id=993159366]
+transform = Transform3D(5.3462725, 3.692872, 1.1392107, -3.7132168, 5.44753, -0.23275694, -1.0710387, -0.4526067, 6.493517, 1.2993481, 21.948494, 0.409701)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch14" type="MeshInstance3D" parent="tree/Cube" unique_id=303111343]
+transform = Transform3D(0.284355, 3.9523845, -5.274044, 2.4281669, -4.9704437, -3.593946, -6.1270623, -1.7863677, -1.6690545, 1.6349978, 21.648756, 1.4323572)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch15" type="MeshInstance3D" parent="tree/Cube" unique_id=1958229014]
+transform = Transform3D(-0.08476286, 6.494838, -1.1522294, 5.7736535, -0.48420474, -3.1540785, -3.189903, -1.048982, -5.6781945, -0.6173065, 20.15065, 1.8434633)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch16" type="MeshInstance3D" parent="tree/Cube" unique_id=1554019927]
+transform = Transform3D(-2.5550523, 0.1718342, 6.0794654, -5.5073733, -2.863073, -2.2336912, 2.580363, -5.940624, 1.2523738, 1.2993481, 21.948494, 0.409701)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch17" type="MeshInstance3D" parent="tree/Cube" unique_id=1459779619]
+transform = Transform3D(-6.2128787, -0.08144181, 2.2161298, -0.3470386, 6.546831, -0.732323, -2.1903033, -0.8062879, -6.170105, 1.6349978, 21.648756, 1.4323572)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch18" type="MeshInstance3D" parent="tree/Cube" unique_id=327231872]
+transform = Transform3D(5.6008067, 2.1265547, -2.7616029, -2.8813646, -0.11613557, -5.933125, -1.9612299, 6.243557, 0.8302404, -0.6173065, 20.15065, 1.8434633)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch19" type="MeshInstance3D" parent="tree/Cube" unique_id=418945203]
+transform = Transform3D(2.7663238, 3.4914143, -4.865718, 5.8858685, -2.5742729, 1.4991347, -1.105322, -4.9699993, -4.1946526, 1.2993481, 21.948494, 0.409701)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch20" type="MeshInstance3D" parent="tree/Cube" unique_id=1837856433]
+transform = Transform3D(-6.592974, 0.045869283, -0.21987647, 0.22356628, 1.9619734, -6.2943177, 0.021628058, -6.2981205, -1.9623901, -1.385564, 19.059906, 1.49849)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch21" type="MeshInstance3D" parent="tree/Cube" unique_id=477768491]
+transform = Transform3D(-5.136803, 1.3784746, -3.9026694, -2.9335113, -5.6006026, 1.8829638, -2.919852, 3.2016962, 4.97407, -1.0544157, 16.093027, 0.043492228)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch22" type="MeshInstance3D" parent="tree/Cube" unique_id=1666378140]
+transform = Transform3D(0.33707935, 6.56561, -0.5449133, 0.91309124, -0.5869179, -6.506886, -6.5246015, 0.25706124, -0.93876386, -1.5524598, 17.982037, 2.478234)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch23" type="MeshInstance3D" parent="tree/Cube" unique_id=358676989]
+transform = Transform3D(6.0590653, -2.443276, 0.9142854, 2.5980036, 5.441888, -2.6746998, 0.23641615, 2.8167431, 5.960525, -1.1901084, 18.628565, 2.2446392)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch24" type="MeshInstance3D" parent="tree/Cube" unique_id=179502740]
+transform = Transform3D(4.342843, 3.8632293, -3.1197653, 4.754694, -4.430328, 1.1326243, -1.4319057, -2.9942307, -5.7010517, -2.3414946, 15.806832, 0.698498)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch25" type="MeshInstance3D" parent="tree/Cube" unique_id=460866690]
+transform = Transform3D(-5.684849, 2.8087437, 1.8196795, 0.37476653, 4.0985684, -5.1554885, -3.3256316, -4.3394094, -3.6915412, -2.2390316, 17.945482, 2.4309344)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch26" type="MeshInstance3D" parent="tree/Cube" unique_id=863948500]
+transform = Transform3D(0.3946402, 6.493445, 1.0941659, -6.5303516, 0.24502185, 0.90123785, 0.8464777, -1.1370595, 6.442696, -1.7948304, 18.455547, 2.9047537)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch27" type="MeshInstance3D" parent="tree/Cube" unique_id=1064359819]
+transform = Transform3D(0.037087016, 6.24731, 2.118377, -2.163995, 2.012706, -5.897789, -6.231656, -0.6617489, 2.0606642, -6.7971063, 23.936531, 2.5075126)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch28" type="MeshInstance3D" parent="tree/Cube" unique_id=1538845393]
+transform = Transform3D(-4.1600866, 2.800962, 4.285564, 4.5541186, 4.5474334, 1.4486632, -2.339114, 3.8721097, -4.801362, -6.9678397, 25.508852, 0.8072666)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch29" type="MeshInstance3D" parent="tree/Cube" unique_id=2121068559]
+transform = Transform3D(4.57195, 4.452604, 1.670141, -2.0328147, 3.92431, -4.8974714, -4.2991524, 2.8795643, 4.091842, -8.0759945, 25.042246, -0.52598995)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch30" type="MeshInstance3D" parent="tree/Cube" unique_id=2008542458]
+transform = Transform3D(-1.518475, -6.220286, -1.5874703, 0.38822314, 1.5393127, -6.4029346, 6.4079075, -1.5672739, 0.0117406985, -6.7971063, 23.936531, 2.5075126)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch31" type="MeshInstance3D" parent="tree/Cube" unique_id=637819487]
+transform = Transform3D(3.7649672, 4.18741, -3.4363344, 4.9809475, -4.32101, 0.1918524, -2.129073, -2.7041173, -5.627839, -6.9678397, 25.508852, 0.8072666)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch32" type="MeshInstance3D" parent="tree/Cube" unique_id=458584072]
+transform = Transform3D(-5.027865, 1.6888764, 3.922504, 2.9434536, 5.760451, 1.2926942, -3.094256, 2.7354476, -5.1439934, -8.0759945, 25.042246, -0.52598995)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch33" type="MeshInstance3D" parent="tree/Cube" unique_id=466812157]
+transform = Transform3D(3.2378025, 5.615351, -1.225683, -3.4584734, 0.77986234, -5.5631466, -4.5905795, 3.3730521, 3.3266988, -3.96921, 20.27363, 3.245616)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch34" type="MeshInstance3D" parent="tree/Cube" unique_id=424421764]
+transform = Transform3D(-2.8589456, 0.9207715, -5.8733664, 4.572305, 4.505972, -1.5192313, 3.799773, -4.7292943, -2.5910087, -6.159842, 22.14078, 3.9124177)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch35" type="MeshInstance3D" parent="tree/Cube" unique_id=1406188928]
+transform = Transform3D(-4.466695, 4.611034, -1.5181756, -2.9000888, -4.188998, -4.19042, -3.8930671, -2.169912, 4.863471, -6.241808, 22.634882, 4.716506)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch36" type="MeshInstance3D" parent="tree/Cube" unique_id=919182893]
+transform = Transform3D(-2.2196336, -2.0185287, 5.875084, -5.0484858, -3.049342, -2.9550183, 3.6199224, -5.490436, -0.5187498, -3.96921, 20.27363, 3.245616)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch37" type="MeshInstance3D" parent="tree/Cube" unique_id=1336817785]
+transform = Transform3D(-5.9614305, -0.7452616, 2.724653, -2.7132163, 3.281016, -5.0389676, -0.7858777, -5.674269, -3.2715256, -5.5926027, 22.228867, 4.604021)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch38" type="MeshInstance3D" parent="tree/Cube" unique_id=885498196]
+transform = Transform3D(-4.9335036, -0.1972747, 4.3748612, 0.06510672, 6.586073, 0.37040478, -4.3788223, 0.3201895, -4.923533, -5.454595, 22.894, 4.8586135)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch39" type="MeshInstance3D" parent="tree/Cube" unique_id=1537619377]
+transform = Transform3D(-2.7572992, 5.7552166, -1.6711057, -5.4552436, -1.6488298, 3.3225715, 2.4810126, 2.770678, 5.4484606, -3.3788214, 20.257875, 3.698257)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch40" type="MeshInstance3D" parent="tree/Cube" unique_id=1142350686]
+transform = Transform3D(5.686126, 3.0115366, 1.4547719, 1.5074631, 0.25368786, -6.4172387, -2.9855092, 5.863791, -0.46951255, -6.018161, 22.302696, 3.0709844)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch41" type="MeshInstance3D" parent="tree/Cube" unique_id=1304604327]
+transform = Transform3D(3.3090296, -5.3680964, 1.9369075, 5.48674, 2.3767512, -2.786482, 1.5696338, 3.008711, 5.6570005, -6.6864476, 22.565472, 3.8875947)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch42" type="MeshInstance3D" parent="tree/Cube" unique_id=1578604682]
+transform = Transform3D(1.5619515, -5.0802226, -3.9076173, 5.1108975, 3.41419, -2.3958, 3.8674095, -2.4601777, 4.7443123, -9.193716, 25.911865, 0.03505014)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch43" type="MeshInstance3D" parent="tree/Cube" unique_id=298459304]
+transform = Transform3D(3.2796707, 1.8733052, 5.4085345, -5.6560106, 2.0169835, 2.7311325, -0.87810457, -5.995021, 2.6089125, -7.9084992, 24.779263, 0.8088649)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch44" type="MeshInstance3D" parent="tree/Cube" unique_id=721368866]
+transform = Transform3D(-5.624736, 3.3948054, 0.5961621, 1.4569452, 3.3758025, -5.4771376, -3.1236877, -4.538394, -3.6281295, -7.5812135, 25.408144, 0.7253192)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch45" type="MeshInstance3D" parent="tree/Cube" unique_id=787303150]
+transform = Transform3D(-1.0350015, 2.2218363, -6.1245403, -4.112084, -5.032858, -1.130888, -5.0534477, 3.640273, 2.1745973, -7.400749, 23.634623, 2.3395708)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch46" type="MeshInstance3D" parent="tree/Cube" unique_id=1273401233]
+transform = Transform3D(-1.6341757, 4.2168984, -4.8026047, -1.776681, -5.0614595, -3.8396356, -6.13927, 0.3422958, 2.3895524, -7.264003, 25.255737, 1.2489402)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch47" type="MeshInstance3D" parent="tree/Cube" unique_id=1908291322]
+transform = Transform3D(-2.4010057, 6.0125923, 1.2655767, -1.485723, 0.7503275, -6.3833704, -5.9620094, -2.6083567, 1.0810554, -6.9494066, 25.939465, 0.5357786)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch48" type="MeshInstance3D" parent="tree/Cube" unique_id=215134686]
+transform = Transform3D(1.4985609, 3.141966, 5.6035843, 5.285243, -3.874048, 0.75877607, 3.6521633, 4.3171277, -3.3973367, -6.4291534, 24.08624, 3.4114509)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch49" type="MeshInstance3D" parent="tree/Cube" unique_id=528602116]
+transform = Transform3D(0.7379937, 4.969649, 4.2750115, 0.86027867, 4.1913905, -5.0209494, -6.498696, 1.1191989, -0.17918734, -7.264003, 25.255737, 1.2489402)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch50" type="MeshInstance3D" parent="tree/Cube" unique_id=617208057]
+transform = Transform3D(6.530791, -0.59754646, 0.7137787, 0.53313994, 6.5474877, 0.60327166, -0.7630881, -0.539549, 6.5302644, -6.9494066, 25.939465, 0.5357786)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch51" type="MeshInstance3D" parent="tree/Cube" unique_id=1913744613]
+transform = Transform3D(-3.6964562, 5.1255264, -1.8928685, -1.2573422, -3.021967, -5.727526, -5.3172417, -2.8485892, 2.6702504, -12.237948, 27.955006, 2.35291)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch52" type="MeshInstance3D" parent="tree/Cube" unique_id=1695004625]
+transform = Transform3D(-0.90515846, -2.1343765, 6.1759915, -2.176049, 5.9775414, 1.7468703, -6.161432, -1.7975484, -1.5242441, -14.072893, 28.567934, 4.005808)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch53" type="MeshInstance3D" parent="tree/Cube" unique_id=537035003]
+transform = Transform3D(3.9256809, 4.6423135, 2.5604172, -4.692125, 4.525432, -1.011045, -2.4679513, -1.2194934, 5.9949846, -10.086959, 28.00279, 1.3613815)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch54" type="MeshInstance3D" parent="tree/Cube" unique_id=1067085822]
+transform = Transform3D(-3.340123, 5.6599607, 0.5711332, 0.19880736, 0.7780396, -6.5477395, -5.6852283, -3.2980704, -0.5645146, -8.312193, 26.675709, 0.6862398)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch55" type="MeshInstance3D" parent="tree/Cube" unique_id=122778178]
+transform = Transform3D(-4.4209843, 1.7548599, -4.5709014, -4.734172, -3.1032715, 3.387492, -1.2491162, 5.550493, 3.339091, -9.9871025, 27.517313, 1.3547401)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch56" type="MeshInstance3D" parent="tree/Cube" unique_id=1846790937]
+transform = Transform3D(3.5883098, 5.2413306, -1.7805272, -2.3027377, -0.51619774, -6.1602545, -5.0338078, 3.972378, 1.5488012, -10.712969, 27.399979, 0.7220977)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch57" type="MeshInstance3D" parent="tree/Cube" unique_id=1278584206]
+transform = Transform3D(-1.6897022, 1.1082914, -6.2796803, 2.627416, -5.7983212, -1.7303072, -5.810283, -2.9443116, 1.0437621, -8.740416, 26.324097, 0.01894039)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch58" type="MeshInstance3D" parent="tree/Cube" unique_id=597876696]
+transform = Transform3D(-6.2426577, 1.2049495, -1.7592977, -0.24103045, -5.8064833, -3.1216123, -2.118711, -2.8897512, 5.53879, -10.382883, 27.140648, 1.1007358)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch59" type="MeshInstance3D" parent="tree/Cube" unique_id=1846615483]
+transform = Transform3D(1.6354474, 1.126603, 6.2907753, 0.5163692, 6.448966, -1.2891763, -6.3699646, 0.81202143, 1.5106114, -10.438222, 27.639923, 1.477323)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch60" type="MeshInstance3D" parent="tree/Cube" unique_id=157663644]
+transform = Transform3D(4.803223, 4.519051, -0.158119, -4.508989, 4.8040323, 0.32873553, 0.34034395, -0.13128084, 6.586707, -14.477726, 30.061792, 5.5313225)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch61" type="MeshInstance3D" parent="tree/Cube" unique_id=2025614725]
+transform = Transform3D(-4.7983565, -0.26137814, -4.519425, 4.2571363, 1.9792308, -4.6343474, 1.5395805, -6.2874537, -1.2709699, -14.41636, 31.554296, 6.6276045)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch62" type="MeshInstance3D" parent="tree/Cube" unique_id=5421775]
+transform = Transform3D(2.3504357, 6.1298594, -0.64654225, 4.8535075, -2.2670932, -3.8498683, -3.7995594, 0.8960212, -5.3177276, -14.77141, 31.772907, 6.715062)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch63" type="MeshInstance3D" parent="tree/Cube" unique_id=359177518]
+transform = Transform3D(0.09199343, 1.4674048, 6.430865, 5.7346277, 3.1601865, -0.8031303, -3.2593458, 5.601579, -1.2315526, -11.637295, 28.472809, 2.7438476)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch64" type="MeshInstance3D" parent="tree/Cube" unique_id=149707132]
+transform = Transform3D(-1.5583999, 6.1760287, 1.7163292, -6.2337246, -1.0487179, -1.8864241, -1.4932498, -2.0675075, 6.083859, -13.48764, 28.9859, 4.6018276)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch65" type="MeshInstance3D" parent="tree/Cube" unique_id=119594458]
+transform = Transform3D(-4.874885, 3.7688508, -2.355639, 0.9213597, -2.5634913, -6.0081086, -4.347916, -4.7688627, 1.3679746, -14.40072, 28.772144, 4.394312)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch66" type="MeshInstance3D" parent="tree/Cube" unique_id=46805938]
+transform = Transform3D(4.5974298, -3.679909, -2.9731536, -3.9647238, -5.2588625, 0.37824732, -2.5811496, 1.5232803, -5.87665, -11.93532, 28.224543, 2.3209898)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch67" type="MeshInstance3D" parent="tree/Cube" unique_id=920429499]
+transform = Transform3D(-5.459508, 1.130397, 3.5261528, 1.9899591, 6.193343, 1.0956029, -3.122757, 1.9704025, -5.466597, -13.354848, 29.07601, 4.3063574)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch68" type="MeshInstance3D" parent="tree/Cube" unique_id=1550802455]
+transform = Transform3D(5.703007, 2.5043852, -2.1729028, -3.2439013, 3.3199995, -4.687478, -0.68597114, 5.12088, 4.1016803, -14.40072, 28.772144, 4.394312)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch69" type="MeshInstance3D" parent="tree/Cube" unique_id=1967926348]
+transform = Transform3D(-1.428622, -6.353808, -1.0516641, 3.9548695, -0.015330443, -5.2798295, 5.0829, -1.7739007, 3.81251, -11.99268, 28.157347, 2.7352977)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch70" type="MeshInstance3D" parent="tree/Cube" unique_id=1459402737]
+transform = Transform3D(-0.72338706, 0.11686685, 6.5559754, -3.9416564, 5.2632246, -0.5287451, -5.2400203, -3.9752445, -0.5073218, -14.189998, 33.476044, 7.08512)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch71" type="MeshInstance3D" parent="tree/Cube" unique_id=93897522]
+transform = Transform3D(-2.7759974, -5.0259724, 3.2482724, -4.609111, -0.4881079, -4.694218, 3.8167744, -4.2449017, -3.3061883, 6.83336, 22.772156, 2.9186268)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch72" type="MeshInstance3D" parent="tree/Cube" unique_id=1975752522]
+transform = Transform3D(3.6074276, 1.9751383, -5.157822, 1.8574458, -6.2355742, -1.0887381, -5.2013655, -0.85690457, -3.9660244, 3.809363, 22.503685, 1.3640671)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch73" type="MeshInstance3D" parent="tree/Cube" unique_id=1711897913]
+transform = Transform3D(-2.7924685, 4.502514, -3.930308, -5.937815, -1.5965358, 2.3898227, 0.6799248, 4.549317, 4.7285566, 6.60443, 23.356903, 1.6063868)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch74" type="MeshInstance3D" parent="tree/Cube" unique_id=143993582]
+transform = Transform3D(-3.4048476, 5.6098566, 0.6740556, -4.7453427, -2.4119651, -3.8964045, -3.0670114, -2.49595, 5.280294, 6.83336, 22.772156, 2.9186268)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch75" type="MeshInstance3D" parent="tree/Cube" unique_id=921614779]
+transform = Transform3D(-2.2043045, 6.1767635, -0.7116658, 3.859707, 0.76740295, -5.294486, -4.87458, -2.1855252, -3.8703718, 3.809363, 22.503685, 1.3640671)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch76" type="MeshInstance3D" parent="tree/Cube" unique_id=1317042221]
+transform = Transform3D(1.7740524, 5.0128784, -3.904053, 2.0962486, -4.2881975, -4.5535636, -5.9980254, -0.01600855, -2.7461362, 6.60443, 23.356903, 1.6063868)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch77" type="MeshInstance3D" parent="tree/Cube" unique_id=195596383]
+transform = Transform3D(2.7117257, 5.291444, -2.8574452, 6.0115023, -2.4695745, 1.1317561, -0.1619042, -3.0691457, -5.837118, 6.83336, 22.772156, 2.9186268)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch78" type="MeshInstance3D" parent="tree/Cube" unique_id=1378894348]
+transform = Transform3D(-2.320624, 4.80792, 3.875098, 6.0911307, 2.462796, 0.5920623, -1.0151874, 3.7863333, -5.3057365, -0.16384953, 19.869175, 2.179642)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch79" type="MeshInstance3D" parent="tree/Cube" unique_id=879642777]
+transform = Transform3D(1.4330896, 6.436737, 0.18011813, -4.485768, 1.130324, -4.702981, -4.6197314, 0.89919734, 4.6224775, 1.3500923, 21.22355, 1.6871338)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch80" type="MeshInstance3D" parent="tree/Cube" unique_id=1196765182]
+transform = Transform3D(-0.08254528, 5.0944557, -4.190168, 5.169585, -2.5528598, -3.2056355, -4.0971184, -3.3237383, -3.9603264, 1.8458652, 22.412764, -0.040067673)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch81" type="MeshInstance3D" parent="tree/Cube" unique_id=461339350]
+transform = Transform3D(-0.4485658, 5.9960093, -2.7137568, 4.2791495, -1.800954, -4.6864963, -5.0005474, -2.0790036, -3.7669713, -0.44586518, 20.527975, 0.97698146)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch82" type="MeshInstance3D" parent="tree/Cube" unique_id=331595391]
+transform = Transform3D(1.7547427, 0.7308161, 6.3170104, -2.909863, 5.9190598, 0.123526275, -5.6543264, -2.819303, 1.8968276, 1.9262233, 21.326586, 0.98857987)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch83" type="MeshInstance3D" parent="tree/Cube" unique_id=2097648917]
+transform = Transform3D(-5.8110833, -1.1250699, 2.9126208, -3.013412, 0.40944254, -5.8540187, 0.8176123, -6.4872494, -0.87460583, 2.3698714, 22.035313, 0.3173329)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch84" type="MeshInstance3D" parent="tree/Cube" unique_id=1169906512]
+transform = Transform3D(-3.8482387, -3.6315222, 3.9396605, -3.4084349, 5.4016976, 1.6498659, -4.1341805, -1.0730954, -5.027409, 0.013114035, 20.2099, 1.4426206)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch85" type="MeshInstance3D" parent="tree/Cube" unique_id=405155959]
+transform = Transform3D(-3.2314985, 2.6709127, -5.0932755, -1.6206782, -6.0283847, -2.133023, -5.518028, 0.20641832, 3.6092346, 1.9262233, 21.326586, 0.98857987)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch86" type="MeshInstance3D" parent="tree/Cube" unique_id=1786768827]
+transform = Transform3D(3.9243886, 4.8724694, -2.091877, 3.5568764, -4.349045, -3.457191, -3.9326234, 0.92875606, -5.2143664, 9.315059, 25.513445, 6.5077167)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch87" type="MeshInstance3D" parent="tree/Cube" unique_id=1538356053]
+transform = Transform3D(-0.15810803, 4.28355, 5.0143757, -3.8368747, 4.0197983, -3.5549083, -5.363875, -3.0016968, 2.3950827, 8.171398, 23.694378, 4.243718)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch88" type="MeshInstance3D" parent="tree/Cube" unique_id=626051365]
+transform = Transform3D(-2.9111042, 4.2887836, -4.080387, 5.8795166, 1.5656241, -2.5490878, -0.6888391, -4.7616086, -4.5133505, 8.781883, 25.243748, 6.3551097)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch89" type="MeshInstance3D" parent="tree/Cube" unique_id=1984818282]
+transform = Transform3D(3.3395944, 5.123244, -2.4733043, 3.6910312, -4.1336536, -3.57868, -4.3291054, 0.42782843, -4.9591894, 9.315059, 25.513445, 6.5077167)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch90" type="MeshInstance3D" parent="tree/Cube" unique_id=188383488]
+transform = Transform3D(-1.3161736, 0.51306504, 6.4437733, -6.457528, 0.1935864, -1.3343968, -0.29287824, -6.573968, 0.46360946, 8.171398, 23.694378, 4.243718)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch91" type="MeshInstance3D" parent="tree/Cube" unique_id=755516416]
+transform = Transform3D(1.7302945, 6.3444314, 0.5215675, 5.9854155, -1.8054665, 2.1054327, 2.1676338, -0.07901106, -6.229999, 7.0744615, 23.119114, 1.5663254)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch92" type="MeshInstance3D" parent="tree/Cube" unique_id=296655180]
+transform = Transform3D(-1.3369818, 6.3918204, 0.9353389, -5.1447372, -0.47592947, -4.1015744, -3.9066498, -1.5607274, 5.0813346, 7.3617706, 23.587267, 1.5548618)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch93" type="MeshInstance3D" parent="tree/Cube" unique_id=182729451]
+transform = Transform3D(-6.031013, -0.57741344, 2.609828, -1.5773603, 5.96877, -2.3245337, -2.1579025, -2.7492032, -5.5949144, 4.2227774, 22.851393, 0.56064725)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch94" type="MeshInstance3D" parent="tree/Cube" unique_id=251021333]
+transform = Transform3D(3.0423746, 5.8528805, -0.07448565, -5.7034097, 2.945319, -1.5211909, -1.31639, 0.7659551, 6.4185853, 6.33278, 22.528145, 2.8013983)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch95" type="MeshInstance3D" parent="tree/Cube" unique_id=1054365730]
+transform = Transform3D(-6.5610166, -0.21065052, 0.65306276, -0.6191961, -0.8883571, -6.507321, 0.2957377, -6.5333195, 0.8637656, 7.7390738, 23.053493, 1.9015799)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch96" type="MeshInstance3D" parent="tree/Cube" unique_id=805917666]
+transform = Transform3D(-5.44189, 2.693129, 2.5788891, 2.5199554, 6.019142, -0.9682519, -2.7483523, 0.18638816, -5.99413, 10.698591, 26.659374, 7.0573487)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch97" type="MeshInstance3D" parent="tree/Cube" unique_id=536293552]
+transform = Transform3D(5.6975446, -1.6720389, -2.8740249, -3.2519853, -3.9906857, -4.1251388, -0.69305384, 4.9796057, -4.270943, 13.086971, 27.634518, 7.1505466)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch98" type="MeshInstance3D" parent="tree/Cube" unique_id=683704691]
+transform = Transform3D(-2.4620705, -2.2640224, 5.685964, 1.2003558, 5.8311453, 2.841595, -6.0012608, 2.095165, -1.7643489, 13.167015, 27.459942, 7.8938127)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch99" type="MeshInstance3D" parent="tree/Cube" unique_id=867459923]
+transform = Transform3D(2.0135026, 5.588254, -2.8696675, -5.0475683, -0.35476992, -4.2324886, -3.7397363, 3.487596, 4.1675906, 10.698591, 26.659374, 7.0573487)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch100" type="MeshInstance3D" parent="tree/Cube" unique_id=1174358104]
+transform = Transform3D(3.8153, 1.0595738, -5.2762237, 0.21417277, -6.492444, -1.1489441, -5.3773017, 0.49320042, -3.7893448, 13.086971, 27.634518, 7.1505466)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch101" type="MeshInstance3D" parent="tree/Cube" unique_id=340772360]
+transform = Transform3D(-3.889365, -4.6016994, 2.6860697, 1.488408, -4.1314707, -4.9227386, 5.1161747, -2.29632, 3.4741096, 13.167015, 27.459942, 7.8938127)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch102" type="MeshInstance3D" parent="tree/Cube" unique_id=951218810]
+transform = Transform3D(-3.5126865, 1.73858, 5.306236, -3.8346426, 3.80574, -3.7854486, -4.0588555, -5.1001415, -1.0158774, 10.698591, 26.659374, 7.0573487)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch103" type="MeshInstance3D" parent="tree/Cube" unique_id=1507116038]
+transform = Transform3D(-3.6928074, -3.6627362, 4.0577483, -5.458744, 2.2127357, -2.9704711, 0.2882199, -5.020553, -4.269515, 9.237795, 25.233639, 5.9179373)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch104" type="MeshInstance3D" parent="tree/Cube" unique_id=1897608654]
+transform = Transform3D(1.6801252, -0.27312985, -6.373411, 1.3714246, -6.4211836, 0.6367048, -6.230102, -1.4871444, -1.5786157, 9.520704, 25.854244, 6.0966687)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch105" type="MeshInstance3D" parent="tree/Cube" unique_id=28671796]
+transform = Transform3D(-5.3601737, -2.762789, -2.6745603, 2.9278843, -5.906824, 0.23380864, -2.4927425, -0.9970821, 6.0257616, 8.010666, 24.15141, 3.9579837)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch106" type="MeshInstance3D" parent="tree/Cube" unique_id=2030869982]
+transform = Transform3D(5.9804335, 1.7176523, 2.1913126, 2.6797745, -2.1418784, -5.6346188, -0.7556375, 5.998317, -2.6395042, 9.003355, 25.826714, 5.559239)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch107" type="MeshInstance3D" parent="tree/Cube" unique_id=1852095681]
+transform = Transform3D(3.995121, 4.439434, 2.8014631, -5.1086416, 4.0979567, 0.7913846, -1.2077029, -2.6487615, 5.9197364, 8.932577, 25.686333, 6.7417517)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch108" type="MeshInstance3D" parent="tree/Cube" unique_id=1990650222]
+transform = Transform3D(2.9874187, 5.8083, -0.92560107, 4.011989, -2.7715406, -4.4430003, -4.3008165, 1.4491277, -4.7875624, 8.010666, 24.15141, 3.9579837)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch109" type="MeshInstance3D" parent="tree/Cube" unique_id=847435385]
+transform = Transform3D(0.23237641, 6.4556007, -1.3375244, 1.0967573, -1.3575592, -6.3617544, -6.5008373, 0.0017253737, -1.1211033, 9.003355, 25.826714, 5.559239)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch110" type="MeshInstance3D" parent="tree/Cube" unique_id=2109174687]
+transform = Transform3D(3.7742226, -0.44305623, 5.392282, -4.346161, 3.6675127, 3.343351, -3.2224047, -5.4654193, 1.8063935, 8.932577, 25.686333, 6.7417517)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch111" type="MeshInstance3D" parent="tree/Cube" unique_id=15073578]
+transform = Transform3D(-3.7727222, 5.4111857, 0.05819344, 2.7317076, 1.9655864, -5.6737986, -4.6714115, -3.2207594, -3.3648734, 8.010666, 24.15141, 3.9579837)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch112" type="MeshInstance3D" parent="tree/Cube" unique_id=1868243906]
+transform = Transform3D(-4.8707685, -0.15875739, -4.446142, -0.9049529, -6.4194236, 1.220596, -4.355968, 1.5111558, 4.718021, 9.003355, 25.826714, 5.559239)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch113" type="MeshInstance3D" parent="tree/Cube" unique_id=1309051084]
+transform = Transform3D(3.0670934, 5.823562, -0.4436389, -3.5428805, 1.4567939, -5.3706145, -4.643134, 2.7352564, 3.804922, 8.932577, 25.686333, 6.7417517)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch114" type="MeshInstance3D" parent="tree/Cube" unique_id=1157763293]
+transform = Transform3D(-6.262984, 1.9497573, 0.70087427, -0.72725886, 0.020776661, -6.5565553, -1.94007, -6.3020453, 0.19522415, 8.456892, 24.440542, 3.296109)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch115" type="MeshInstance3D" parent="tree/Cube" unique_id=1704577482]
+transform = Transform3D(-3.8585923, -0.45331186, 5.3313723, 3.82436, 4.3634095, 3.1388981, -3.7420962, 4.9267554, -2.289443, 9.323094, 25.652597, 5.522972)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch116" type="MeshInstance3D" parent="tree/Cube" unique_id=972813136]
+transform = Transform3D(5.229388, 3.938042, -0.8143, -2.4139013, 2.005643, -5.802434, -3.2162614, 4.8976507, 3.0309138, 13.717117, 27.852547, 7.111615)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch117" type="MeshInstance3D" parent="tree/Cube" unique_id=1268182438]
+transform = Transform3D(-1.293892, -0.34314075, -6.459554, 5.7110476, -3.1540987, -0.97641, -3.0376902, -5.783744, 0.9157096, 11.045813, 26.82837, 6.6036644)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch118" type="MeshInstance3D" parent="tree/Cube" unique_id=304277769]
+transform = Transform3D(-2.3505073, -1.3018718, -6.024787, 6.163832, -0.5070906, -2.2951791, -0.010169138, -6.447155, 1.3971069, 12.697873, 27.17847, 7.837208)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch119" type="MeshInstance3D" parent="tree/Cube" unique_id=656239669]
+transform = Transform3D(-1.1731164, 6.0510755, -2.350768, 6.3646145, 1.5423872, 0.7940663, 1.2780051, -2.1268182, -6.112378, 13.494619, 27.19766, 7.687626)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch120" type="MeshInstance3D" parent="tree/Cube" unique_id=572900486]
+transform = Transform3D(2.1276903, 4.292359, 4.5350103, 6.2404823, -1.2952898, -1.7018625, -0.21690097, 4.8389688, -4.478288, 11.081743, 26.466602, 6.87499)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch121" type="MeshInstance3D" parent="tree/Cube" unique_id=2123727956]
+transform = Transform3D(4.664755, 2.0101383, 4.2091727, 0.95950854, 5.4119983, -3.647923, -4.5647707, 3.1917615, 3.5345793, 13.115436, 27.063616, 7.475176)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch122" type="MeshInstance3D" parent="tree/Cube" unique_id=167105010]
+transform = Transform3D(-4.6923375, 4.575464, -0.7515476, 4.398257, 4.7306247, 1.3394972, 1.4680021, 0.4517154, -6.4155006, 13.809776, 27.458817, 7.324209)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch123" type="MeshInstance3D" parent="tree/Cube" unique_id=1705636613]
+transform = Transform3D(-2.513882, 6.0950003, 0.22159947, -2.8219233, -0.9498786, -5.886613, -5.40693, -2.3380415, 2.969244, 13.80644, 28.901003, 7.3152637)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch124" type="MeshInstance3D" parent="tree/Cube" unique_id=1421152171]
+transform = Transform3D(-3.6288896, 5.3587666, -1.2777005, 4.557226, 2.0604532, -4.3016224, -3.0952516, -3.2489836, -4.8354163, 14.103968, 30.642643, 6.6232767)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch125" type="MeshInstance3D" parent="tree/Cube" unique_id=260385656]
+transform = Transform3D(-2.2465112, 5.5216184, -2.8253598, -6.102228, -2.5056987, -0.044873334, -1.1107318, 2.5982587, 5.960961, 13.86857, 30.884209, 6.8051834)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch126" type="MeshInstance3D" parent="tree/Cube" unique_id=1649698372]
+transform = Transform3D(-0.4985158, 5.8562827, 2.995523, 2.0410779, 2.9935496, -5.5127473, -6.253255, 0.510233, -2.0381804, 13.80644, 28.901003, 7.3152637)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch127" type="MeshInstance3D" parent="tree/Cube" unique_id=1295366810]
+transform = Transform3D(6.258893, -0.41003186, 2.0435119, 0.40870595, 6.583766, 0.069247, -2.0437775, 0.060906153, 6.2719274, 11.464401, 34.824425, 6.2219725)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch128" type="MeshInstance3D" parent="tree/Cube" unique_id=287320078]
+transform = Transform3D(-6.31609, -1.361225, -1.331099, 1.6455817, -1.5836161, -6.1888585, 0.9575068, -6.2575545, 1.8557892, -1.3484465, 14.097027, 0.22476591)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch129" type="MeshInstance3D" parent="tree/Cube" unique_id=258651030]
+transform = Transform3D(-3.689337, -1.8114028, 5.15998, 0.012664285, 6.2215605, 2.1931243, -5.468676, 1.2364358, -3.476002, -2.2218332, 13.578012, -0.61786544)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch130" type="MeshInstance3D" parent="tree/Cube" unique_id=850672338]
+transform = Transform3D(4.037323, 3.5875819, -3.7877488, -1.7763853, -3.557967, -5.2633724, -4.9053283, 4.2412143, -1.2114562, 4.897561, 13.290435, -1.996145)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch131" type="MeshInstance3D" parent="tree/Cube" unique_id=978230044]
+transform = Transform3D(4.979437, -0.99517906, -4.2110076, -0.9772703, -6.5127273, 0.3835355, -4.2151995, 0.33432916, -5.0634055, 5.7723947, 13.924364, -1.6145821)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch132" type="MeshInstance3D" parent="tree/Cube" unique_id=693321602]
+transform = Transform3D(-5.7427483, 0.887024, 3.1227891, -0.9633576, 5.594267, -3.360639, -3.1000917, -3.3815887, -4.7404714, -3.4866762, 14.628955, -0.67106575)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch133" type="MeshInstance3D" parent="tree/Cube" unique_id=708122730]
+transform = Transform3D(-4.021502, 1.3511176, -5.0517077, -3.8313515, -5.0984898, 1.6863867, -3.558934, 3.9620252, 3.8928263, 1.0713912, 15.60869, -5.771381)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch134" type="MeshInstance3D" parent="tree/Cube" unique_id=1834327969]
+transform = Transform3D(-4.7932024, 3.9841716, -2.1608558, -0.41316906, -3.5160434, -5.5663676, -4.5135584, -3.9091601, 2.8042777, 1.4613807, 15.098806, -6.82204)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch135" type="MeshInstance3D" parent="tree/Cube" unique_id=559689135]
+transform = Transform3D(0.7635483, 6.5512915, 0.12378728, 6.5452867, -0.76840633, 0.29413366, 0.30652356, 0.088776104, -6.589074, -0.23923352, 14.540369, -3.41555)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch136" type="MeshInstance3D" parent="tree/Cube" unique_id=2056203439]
+transform = Transform3D(2.3975635, 5.9617734, 1.4922096, -1.4540784, 2.1065564, -6.079952, -5.9711866, 1.8808042, 2.0797195, 1.0713912, 15.60869, -5.771381)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch137" type="MeshInstance3D" parent="tree/Cube" unique_id=1152572573]
+transform = Transform3D(1.0141368, 6.5043764, 0.42702463, 6.1658845, -1.0974241, 2.072502, 2.1145046, 0.08052151, -6.24821, 1.4613807, 15.098806, -6.82204)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch138" type="MeshInstance3D" parent="tree/Cube" unique_id=753341544]
+transform = Transform3D(-0.65642124, 6.495079, 0.9491159, 1.7523179, 1.0926276, -6.2652454, -6.32584, -0.3713146, -1.8340209, -0.23923352, 14.540369, -3.41555)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch139" type="MeshInstance3D" parent="tree/Cube" unique_id=779915651]
+transform = Transform3D(-2.2869234, 6.1109285, 0.97174734, -6.1216893, -2.38538, 0.59382635, 0.90147, -0.69589835, 6.4977555, 1.0713912, 15.60869, -5.771381)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch140" type="MeshInstance3D" parent="tree/Cube" unique_id=51424917]
+transform = Transform3D(-4.0254736, 5.2222095, -0.20454724, 5.058854, 3.8287644, -1.8072921, -1.3119841, -1.2596991, -6.3411045, -9.405508, 18.249184, -3.3342042)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch141" type="MeshInstance3D" parent="tree/Cube" unique_id=1007332137]
+transform = Transform3D(-2.1148062, 5.407831, 3.1306074, 0.21740508, 3.3667214, -5.6688333, -6.2448435, -1.7141457, -1.2575274, -6.6999474, 16.933317, -1.80148)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch142" type="MeshInstance3D" parent="tree/Cube" unique_id=394506099]
+transform = Transform3D(4.56907, -3.661316, 3.039097, 4.543959, 2.107057, -4.293074, 1.4120107, 5.0668364, 3.9813495, -8.797455, 18.504068, -2.8716087)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch143" type="MeshInstance3D" parent="tree/Cube" unique_id=2041349090]
+transform = Transform3D(4.507935, -1.758523, -4.4837346, 1.1644701, -5.56119, 3.3518553, -4.67336, -3.0819678, -3.4898338, -9.405508, 18.249184, -3.3342042)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch144" type="MeshInstance3D" parent="tree/Cube" unique_id=2027746616]
+transform = Transform3D(-3.8505101, 5.355502, -0.09953438, 4.9459667, 3.5077732, -2.5982077, -2.056386, -1.5911841, -6.0627675, -6.6999474, 16.933317, -1.80148)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch145" type="MeshInstance3D" parent="tree/Cube" unique_id=842351401]
+transform = Transform3D(-3.9294064, 5.28429, -0.39218503, -3.370696, -2.869456, -4.891051, -4.088511, -2.712982, 4.409258, -8.797455, 18.504068, -2.8716087)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch146" type="MeshInstance3D" parent="tree/Cube" unique_id=880960568]
+transform = Transform3D(-3.0078735, 5.166356, -2.7891243, 5.8613214, 2.461068, -1.7623303, -0.33964986, -3.2817163, -5.712506, -5.3826933, 15.355438, -0.58528507)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch147" type="MeshInstance3D" parent="tree/Cube" unique_id=1948179745]
+transform = Transform3D(-3.2896938, 5.2791047, -2.196981, 0.5971418, -2.2035925, -6.1891317, -5.6867476, -3.285269, 0.62102395, -3.3834233, 14.130333, -1.3212978)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch148" type="MeshInstance3D" parent="tree/Cube" unique_id=694094558]
+transform = Transform3D(-3.5733397, -5.1518254, -2.0512676, 3.8433228, -0.5418988, -5.334132, 3.9972315, -4.0844593, 3.2950094, -4.7628207, 15.192808, -1.2214278)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch149" type="MeshInstance3D" parent="tree/Cube" unique_id=423817975]
+transform = Transform3D(2.9076197, -2.1102033, 5.532678, -0.70216495, 5.9973364, 2.6564393, -5.8796644, -1.7597585, 2.418789, -5.018411, 15.563061, -1.2073575)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch150" type="MeshInstance3D" parent="tree/Cube" unique_id=1956089850]
+transform = Transform3D(3.9678042, -5.218563, -0.7354564, 3.5359416, 3.3187406, -4.472229, 3.907865, 2.2957196, 4.793331, -3.190886, 15.1515465, -0.85805225)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch151" type="MeshInstance3D" parent="tree/Cube" unique_id=1806564836]
+transform = Transform3D(-0.7363574, 6.5282087, -0.59838, 6.544631, 0.7668376, 0.31232232, 0.37863278, -0.55878544, -6.562178, -4.8327293, 16.121311, -0.18358737)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch152" type="MeshInstance3D" parent="tree/Cube" unique_id=667618674]
+transform = Transform3D(-4.7336416, 0.5786143, 4.558035, -4.5913863, -0.84093696, -4.6615267, 0.17217329, -6.5173516, 1.006144, -9.2582855, 21.107456, -5.5901504)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch153" type="MeshInstance3D" parent="tree/Cube" unique_id=449647332]
+transform = Transform3D(-2.7671056, -5.362852, 2.6647239, -5.9810023, 2.6208482, -0.93625057, -0.29754764, -2.8086977, -5.961585, -7.040926, 16.986214, -1.0502332)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch154" type="MeshInstance3D" parent="tree/Cube" unique_id=846502678]
+transform = Transform3D(5.367623, -2.9340904, -2.469323, -3.2465699, -1.2158779, -5.612418, 2.0411315, 5.781919, -2.433315, -9.205446, 18.004679, -2.4811182)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch155" type="MeshInstance3D" parent="tree/Cube" unique_id=294542510]
+transform = Transform3D(1.9541523, -1.5356418, 6.1107216, -5.6276765, 2.4517264, 2.415805, -2.8334372, -5.92863, -0.583775, -9.593691, 18.835182, -2.5902038)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch156" type="MeshInstance3D" parent="tree/Cube" unique_id=31128194]
+transform = Transform3D(-5.630131, -3.2756355, 1.0438526, -3.42321, 5.156157, -2.283303, 0.31788123, -2.4903922, -6.1003838, -7.040926, 16.986214, -1.0502332)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch157" type="MeshInstance3D" parent="tree/Cube" unique_id=961362980]
+transform = Transform3D(-2.8961196, 5.132323, -2.9647057, -5.2827907, -3.7313244, -1.2988697, -2.6874409, 1.8039421, 5.748145, -8.989307, 17.852854, -3.0055065)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch158" type="MeshInstance3D" parent="tree/Cube" unique_id=639753104]
+transform = Transform3D(-1.1748313, 6.482553, -0.33761612, 0.17489405, -0.31136614, -6.587121, -6.4889836, -1.182059, -0.11641367, -9.302926, 18.923603, -3.0354526)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch159" type="MeshInstance3D" parent="tree/Cube" unique_id=269032983]
+transform = Transform3D(2.295802, 4.836013, -3.8548627, -4.168805, 4.247427, 2.8457198, 4.5681562, 1.4456967, 4.5342693, -6.751718, 17.423996, -1.251802)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch160" type="MeshInstance3D" parent="tree/Cube" unique_id=387203540]
+transform = Transform3D(5.0204997, 4.264274, 0.3581262, 2.9305484, -3.0237837, -5.0780225, -3.1183608, 4.02373, -4.195608, -9.031289, 18.64227, -2.3470442)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch161" type="MeshInstance3D" parent="tree/Cube" unique_id=224241401]
+transform = Transform3D(3.039292, 2.9907165, 5.0334883, -1.5083846, 5.879778, -2.582766, -5.6573105, 0.039010458, 3.3927863, -9.302926, 18.923603, -3.0354526)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch162" type="MeshInstance3D" parent="tree/Cube" unique_id=1561205408]
+transform = Transform3D(-1.3867002, 1.5638471, -6.2569356, 4.491478, 4.8269963, 0.2110218, 4.628335, -4.215719, -2.079429, -9.68006, 22.062704, -6.4964733)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch163" type="MeshInstance3D" parent="tree/Cube" unique_id=160076102]
+transform = Transform3D(2.4372842, 4.3502774, -4.3188605, 2.6102288, -4.9418116, -3.504715, -5.5465474, -0.4140227, -3.5471437, -10.568821, 23.159225, -7.1131716)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch164" type="MeshInstance3D" parent="tree/Cube" unique_id=85235697]
+transform = Transform3D(-5.8409796, 2.0946617, 2.239007, -3.0158007, -4.79371, -3.3827653, 0.5529045, -4.0187745, 5.2020726, -10.662504, 23.361467, -7.5055156)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch165" type="MeshInstance3D" parent="tree/Cube" unique_id=1068604191]
+transform = Transform3D(-4.1071024, -4.272391, 2.897615, -2.5041108, -1.5891801, -5.892514, 4.5143027, -4.7685394, -0.6323692, -9.68006, 22.062704, -6.4964733)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch166" type="MeshInstance3D" parent="tree/Cube" unique_id=702326382]
+transform = Transform3D(-4.590894, 0.7335157, 4.6801085, 3.4959388, 4.922647, 2.657768, -3.1968546, 4.3298116, -3.814528, -9.316932, 20.417095, -5.678132)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch167" type="MeshInstance3D" parent="tree/Cube" unique_id=1983720644]
+transform = Transform3D(5.8006945, 2.9708734, 1.0215791, -0.024377905, 2.1876285, -6.22346, -3.1415153, 5.4686346, 1.9346027, -9.2020855, 20.740894, -6.022556)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch168" type="MeshInstance3D" parent="tree/Cube" unique_id=2030877271]
+transform = Transform3D(2.1626656, 5.3369317, -3.2183537, 6.022711, -0.9138499, 2.5317159, 1.6023682, -3.7682629, -5.1720757, -9.8670845, 21.663662, -6.5822463)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch169" type="MeshInstance3D" parent="tree/Cube" unique_id=719032475]
+transform = Transform3D(-2.634288, 6.017266, -0.60893095, 2.1411672, 0.30670592, -6.232102, -5.6562963, -2.686299, -2.0755405, -9.606091, 24.540901, -9.124098)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch170" type="MeshInstance3D" parent="tree/Cube" unique_id=883812030]
+transform = Transform3D(2.6601205, 3.871709, -4.6315665, -5.240293, -1.0315784, -3.8720748, -2.9968128, 5.240563, 2.6595864, 3.3319774, 20.037651, -8.231174)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch171" type="MeshInstance3D" parent="tree/Cube" unique_id=1343983605]
+transform = Transform3D(3.7584307, -0.11249628, -5.4202695, -2.4271595, -5.93241, -1.5598726, -4.847772, 2.882993, -3.421293, 1.9258535, 17.426012, -7.299816)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch172" type="MeshInstance3D" parent="tree/Cube" unique_id=1502635524]
+transform = Transform3D(-4.4827924, 0.62404674, 4.7992606, -4.0329876, -4.097894, -3.2341993, 2.6753228, -5.1318226, 3.1661987, 2.7267196, 19.36649, -8.167714)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch173" type="MeshInstance3D" parent="tree/Cube" unique_id=483468518]
+transform = Transform3D(-2.7770913, 1.6236417, 5.7592816, -0.3462547, 6.295066, -1.9416513, -5.973747, -1.1196821, -2.564847, 1.2557431, 15.925994, -6.268837)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch174" type="MeshInstance3D" parent="tree/Cube" unique_id=1883090701]
+transform = Transform3D(-1.0269449, 4.892741, -4.3039813, -5.058763, -3.345069, -2.5956156, -4.1075654, 2.8964446, 4.272739, -0.5667264, 15.046581, -3.1525183)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch175" type="MeshInstance3D" parent="tree/Cube" unique_id=354987366]
+transform = Transform3D(1.6753484, 5.8408794, -2.5680935, 5.622609, -2.6066072, -2.2604508, -3.0161645, -1.6147745, -5.6403027, 0.4216, 15.682702, -5.8070774)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch176" type="MeshInstance3D" parent="tree/Cube" unique_id=1928905912]
+transform = Transform3D(3.2077463, 3.1612837, 4.82021, 4.4955487, 2.0808187, -4.356375, -3.6080709, 5.4031696, -1.1425188, 1.2557431, 15.925994, -6.268837)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch177" type="MeshInstance3D" parent="tree/Cube" unique_id=1301420680]
+transform = Transform3D(-5.9019127, 2.6642835, 1.2596803, -2.1566334, -5.8262553, 2.2184393, 2.0085142, 1.5729398, 6.083544, -0.5667264, 15.046581, -3.1525183)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch178" type="MeshInstance3D" parent="tree/Cube" unique_id=670311305]
+transform = Transform3D(-4.8827047, 4.2325435, 1.3276083, -2.6412063, -1.1877753, -5.9271398, -3.5638452, -4.9185915, 2.5737593, 0.4216, 15.682702, -5.8070774)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch179" type="MeshInstance3D" parent="tree/Cube" unique_id=1596851218]
+transform = Transform3D(-5.573457, 0.41902763, 3.5041075, -1.0575219, 6.0508213, -2.4056098, -3.366898, -2.5941708, -5.045002, 0.660105, 14.845478, -7.045927)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch180" type="MeshInstance3D" parent="tree/Cube" unique_id=722793452]
+transform = Transform3D(-3.038801, 1.56119, -5.643237, -4.3748817, -4.831065, 1.0193057, -3.8915107, 4.212038, 3.2607725, -1.0812454, 14.549989, -3.5189)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch181" type="MeshInstance3D" parent="tree/Cube" unique_id=1191617981]
+transform = Transform3D(-2.7548223, 5.0376697, -3.2481675, -0.97254235, -3.9030814, -5.2285624, -5.914631, -1.704582, 2.3726118, 0.24773306, 14.849541, -6.355749)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch182" type="MeshInstance3D" parent="tree/Cube" unique_id=1595094600]
+transform = Transform3D(-4.916467, 2.911159, -3.2971635, 4.1594977, 4.6849384, -2.0658462, 1.4299355, -3.618604, -5.327173, 0.5768343, 15.698549, -6.5053015)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch183" type="MeshInstance3D" parent="tree/Cube" unique_id=515116555]
+transform = Transform3D(-0.9234469, 6.5315585, 0.061181176, 3.974916, 0.6109651, -5.229197, -5.183148, -0.69513977, -4.0211315, -1.0812454, 14.549989, -3.5189)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch184" type="MeshInstance3D" parent="tree/Cube" unique_id=1779303895]
+transform = Transform3D(1.9268571, 2.4494743, 5.814211, 3.4004261, 4.717569, -3.114386, -5.314327, 3.9067094, 0.11533248, 0.24773306, 14.849541, -6.355749)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch185" type="MeshInstance3D" parent="tree/Cube" unique_id=1214855743]
+transform = Transform3D(2.4165092, 4.210397, 4.4666343, -3.033818, 4.9922414, -3.064515, -5.3361235, -0.931592, 3.7650633, 0.5768343, 15.698549, -6.5053015)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch186" type="MeshInstance3D" parent="tree/Cube" unique_id=919698569]
+transform = Transform3D(0.8848835, -5.5005603, -3.5325027, 4.61902, 3.0486166, -3.5900328, 4.6259456, -1.9918665, 4.26038, -1.0812454, 14.549989, -3.5189)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch187" type="MeshInstance3D" parent="tree/Cube" unique_id=362224278]
+transform = Transform3D(0.37484795, -5.380654, -3.798129, 6.558267, 0.65456027, -0.28003505, 0.60527503, -3.7600331, 5.3864202, 3.0250273, 22.723791, -8.284468)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch188" type="MeshInstance3D" parent="tree/Cube" unique_id=774275024]
+transform = Transform3D(3.3810496, 4.364009, 3.6113257, -3.5129285, 4.9146814, -2.6500912, -4.443602, -0.56485546, 4.8428392, 3.2008276, 22.933926, -8.834088)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch189" type="MeshInstance3D" parent="tree/Cube" unique_id=354254266]
+transform = Transform3D(0.16442636, -6.1337347, -2.4224029, 5.930021, 1.1977228, -2.630223, 2.8854077, -2.1119974, 5.5436134, 1.5780412, 16.95202, -7.6842213)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch190" type="MeshInstance3D" parent="tree/Cube" unique_id=55748876]
+transform = Transform3D(2.7462459, -3.4214923, 4.9263873, 5.6301794, 3.338683, -0.8197852, -2.068087, 4.545807, 4.3100376, 2.7964585, 18.792177, -8.744862)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch191" type="MeshInstance3D" parent="tree/Cube" unique_id=259028652]
+transform = Transform3D(-1.2423835, 6.169618, 1.9773935, -5.3789177, -2.1045542, 3.1868274, 3.6113014, -1.012154, 5.4269533, 2.8951344, 19.700909, -8.460067)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch192" type="MeshInstance3D" parent="tree/Cube" unique_id=1888378536]
+transform = Transform3D(-4.467858, -4.8013015, -0.70958924, 1.8700633, -0.81298965, -6.2737293, 4.478713, -4.450205, 1.9116939, 1.5780412, 16.95202, -7.6842213)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch193" type="MeshInstance3D" parent="tree/Cube" unique_id=5424501]
+transform = Transform3D(-4.0109324, 0.116618745, 5.2360873, 3.2980828, 5.1795144, 2.4110293, -4.0685205, 4.0837245, -3.20751, 2.7964585, 18.792177, -8.744862)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch194" type="MeshInstance3D" parent="tree/Cube" unique_id=1239113569]
+transform = Transform3D(6.1315074, 2.3975847, -0.41711408, -1.8901536, 3.979622, -4.90996, -1.5328773, 4.68316, 4.385896, 3.7086596, 19.612497, -8.806856)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch195" type="MeshInstance3D" parent="tree/Cube" unique_id=1576123585]
+transform = Transform3D(2.2512622, 5.037658, -3.6154628, 5.9184513, -2.8931053, -0.3458722, -1.8497306, -3.1256511, -5.506955, 1.9764922, 16.57756, -7.9786596)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch196" type="MeshInstance3D" parent="tree/Cube" unique_id=89328332]
+transform = Transform3D(1.4879597, 6.4183865, -0.3287278, 1.6167482, -0.70039845, -6.357148, -6.220118, 1.3533397, -1.7310027, 3.537444, 25.635174, -8.3703785)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch197" type="MeshInstance3D" parent="tree/Cube" unique_id=1114921763]
+transform = Transform3D(1.559972, 6.3062625, -1.1468767, -4.462767, 0.22135042, -4.8530912, -4.6008673, 1.9234977, 4.3185596, 2.6779003, 22.753296, -9.224054)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch198" type="MeshInstance3D" parent="tree/Cube" unique_id=450817596]
+transform = Transform3D(6.355747, -0.2564567, -1.7482893, -0.13153428, -6.577513, 0.4866743, -1.7620965, -0.4340315, -6.3422737, 3.3200474, 20.822071, -9.111116)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch199" type="MeshInstance3D" parent="tree/Cube" unique_id=1632437566]
+transform = Transform3D(-1.998248, 4.9360814, 3.8935738, -2.1553307, 3.3000553, -5.289801, -5.905876, -2.8744633, 0.613109, 3.2086332, 22.514442, -8.99298)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch200" type="MeshInstance3D" parent="tree/Cube" unique_id=1883543566]
+transform = Transform3D(-1.8201557, 5.7266536, 2.7221754, 6.2397013, 1.1141534, 1.8282652, 1.1273528, 3.0792644, -5.7240696, 2.8181937, 23.068258, -8.1495495)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch201" type="MeshInstance3D" parent="tree/Cube" unique_id=1882032267]
+transform = Transform3D(0.23991019, 6.5705605, -0.53662986, 0.31008932, -0.547638, -6.5667133, -6.5851407, 0.21359116, -0.32877213, 2.903964, 20.94028, -8.795231)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch202" type="MeshInstance3D" parent="tree/Cube" unique_id=597488059]
+transform = Transform3D(4.05093, 4.0434794, 3.2799435, -5.110138, 2.2919157, 3.485885, 0.9971118, -4.6813664, 4.5396433, 3.2259512, 25.715496, -8.402234)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch203" type="MeshInstance3D" parent="tree/Cube" unique_id=1144531118]
+transform = Transform3D(-6.182389, 0.41956618, -2.2627015, 1.851854, 4.757724, -4.177617, 1.3661958, -4.5503645, -4.576623, 3.2639623, 26.025873, -8.001265)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch204" type="MeshInstance3D" parent="tree/Cube" unique_id=175490698]
+transform = Transform3D(6.234468, -1.6081464, -1.4363322, -1.9398842, -2.264957, -5.8842664, 0.94129443, 5.983445, -2.6134515, 3.2351966, 24.203716, -8.385444)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch205" type="MeshInstance3D" parent="tree/Cube" unique_id=1518806215]
+transform = Transform3D(2.027124, 1.1354996, 6.1740723, -6.164327, 1.5871034, 1.7320331, -1.1872677, -6.3015494, 1.5487576, 3.4614198, 25.593952, -7.95212)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch206" type="MeshInstance3D" parent="tree/Cube" unique_id=1702045725]
+transform = Transform3D(-3.3610976, 5.547269, 1.2035732, 4.394464, 3.4282742, -3.528934, -3.5929732, -0.99624604, -5.4420395, 0.6421685, 28.998636, -5.5595627)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch207" type="MeshInstance3D" parent="tree/Cube" unique_id=675664514]
+transform = Transform3D(0.8390075, 5.3907137, -3.708644, 0.21220484, -3.7594578, -5.4165688, -6.5397854, 0.56960195, -0.65155077, 3.3005333, 27.166748, -7.4673753)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch208" type="MeshInstance3D" parent="tree/Cube" unique_id=749145421]
+transform = Transform3D(2.3382454, 5.2081666, -3.3053548, 6.1678643, -2.0246706, 1.172994, -0.08839221, -3.5062058, -5.5871687, 3.4930408, 28.338503, -6.722947)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch209" type="MeshInstance3D" parent="tree/Cube" unique_id=2045739631]
+transform = Transform3D(-3.8741636, 4.1096606, 3.4087038, 4.0141144, 5.0188227, -1.4886329, -3.5207174, 1.1999346, -5.448157, 3.2799284, 28.763708, -6.5888095)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch210" type="MeshInstance3D" parent="tree/Cube" unique_id=503449805]
+transform = Transform3D(6.5709734, 0.4359781, -0.38724443, -0.55283725, 3.2641423, -5.7059155, -0.18548903, 5.7160325, 3.2879014, 3.47491, 27.152641, -7.6500196)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch211" type="MeshInstance3D" parent="tree/Cube" unique_id=1874768400]
+transform = Transform3D(0.7943414, 6.11331, -2.3482347, 6.4832087, -0.40014714, 1.1513577, 0.92453444, -2.4464397, -6.0562286, 3.4930408, 28.338503, -6.722947)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch212" type="MeshInstance3D" parent="tree/Cube" unique_id=2146393041]
+transform = Transform3D(2.3817072, 6.022903, 1.2529377, 0.4420928, 1.1725163, -6.476689, -6.135941, 2.42231, 0.019692596, 10.795792, 16.994068, -1.0648863)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch213" type="MeshInstance3D" parent="tree/Cube" unique_id=655473221]
+transform = Transform3D(-4.3605986, -4.725832, 1.4729042, -2.3735924, 0.27372035, -6.1488934, 4.3438444, -4.5944915, -1.8813345, 7.997384, 14.758976, -1.6229358)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch214" type="MeshInstance3D" parent="tree/Cube" unique_id=599340285]
+transform = Transform3D(2.5542068, -2.7261157, 5.4371066, -5.4066124, 1.6836337, 3.3840404, -2.7861042, -5.76641, -1.582388, 5.0364604, 14.064795, -1.3674796)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch215" type="MeshInstance3D" parent="tree/Cube" unique_id=2116067468]
+transform = Transform3D(-2.4649196, 6.053886, -0.89018834, -5.8452325, -2.045752, 2.2728717, 1.8097557, 1.638037, 6.128574, 6.1164827, 13.830575, -0.8405718)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch216" type="MeshInstance3D" parent="tree/Cube" unique_id=765274267]
+transform = Transform3D(2.9361677, 5.8862987, -0.49820948, 0.13326615, -0.6222171, -6.5660405, -5.9058423, 2.912411, -0.39585504, 1.6186547, 14.25584, -0.91730124)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch217" type="MeshInstance3D" parent="tree/Cube" unique_id=1422356154]
+transform = Transform3D(-2.336632, 6.1287336, -0.7046854, -5.468783, -1.7090994, 3.2694325, 2.854884, 1.7422434, 5.6861253, 5.208895, 12.953141, -1.4358723)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch218" type="MeshInstance3D" parent="tree/Cube" unique_id=898826265]
+transform = Transform3D(-5.646529, 3.3969371, -0.30873424, 0.38415253, 0.040025376, -6.585485, -3.3892365, -5.654822, -0.23207407, 5.7538323, 13.018953, -2.0409284)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch219" type="MeshInstance3D" parent="tree/Cube" unique_id=306264254]
+transform = Transform3D(-5.766845, 3.098271, -0.81364673, -3.0508986, -4.801579, 3.3398597, 0.9763824, 3.2959619, 5.6303744, 1.4403557, 13.3176985, -1.6014347)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch220" type="MeshInstance3D" parent="tree/Cube" unique_id=655103437]
+transform = Transform3D(4.8017545, 4.4940734, 0.51405007, 3.1018224, -2.7257247, -5.1445994, -3.292361, 3.9864166, -4.097149, 5.3325934, 13.694116, -0.81775475)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch221" type="MeshInstance3D" parent="tree/Cube" unique_id=57893893]
+transform = Transform3D(4.6708164, 3.5441089, 3.0233307, -3.4808443, 5.5005274, -1.0703689, -3.0959587, -0.8374134, 5.76468, 6.1157055, 12.965322, -1.2542466)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch222" type="MeshInstance3D" parent="tree/Cube" unique_id=1024285382]
+transform = Transform3D(3.0409656, 5.782285, -0.9140504, 5.324366, -3.1600292, -2.2766457, -2.4333978, 0.3117364, -6.1236563, 1.7149625, 13.609787, -0.89417166)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch223" type="MeshInstance3D" parent="tree/Cube" unique_id=837785473]
+transform = Transform3D(-2.8277988, 5.95986, 0.037410215, 1.2311709, 0.62465, -6.450721, -5.8314276, -2.7581983, -1.3800615, 5.3325934, 13.694116, -0.81775475)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch224" type="MeshInstance3D" parent="tree/Cube" unique_id=1863465170]
+transform = Transform3D(1.8534305, 4.1128016, 4.8132544, -6.1010933, -0.1792026, 2.50246, 1.6909212, -5.1546597, 3.7534025, 11.230769, 16.61159, -1.5458454)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch225" type="MeshInstance3D" parent="tree/Cube" unique_id=1617085624]
+transform = Transform3D(-5.8517957, 3.0200236, 0.39207655, 1.6263548, 3.8171518, -5.1285577, -2.5747297, -4.4527073, -4.130611, 8.158648, 14.99667, -0.9498335)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch226" type="MeshInstance3D" parent="tree/Cube" unique_id=930504384]
+transform = Transform3D(0.34222093, 4.215479, -5.06265, -2.6952066, -4.536227, -3.9593325, -6.011369, 2.2738073, 1.4869615, 10.295696, 16.665182, -0.94527876)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch227" type="MeshInstance3D" parent="tree/Cube" unique_id=1360150513]
+transform = Transform3D(-2.0886054, -3.990605, -4.819805, 6.2243595, -0.8032212, -2.0322175, 0.64249486, -5.191111, 4.0196137, 13.489749, 22.261587, -2.8909607)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch228" type="MeshInstance3D" parent="tree/Cube" unique_id=1695854968]
+transform = Transform3D(3.2297432, 0.06780495, 5.751682, 5.5880823, -1.600884, -3.1190045, 1.3637369, 6.3992395, -0.8412182, 11.864895, 21.341461, -1.4765441)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch229" type="MeshInstance3D" parent="tree/Cube" unique_id=337984966]
+transform = Transform3D(-0.47271916, 4.38257, 4.9078927, -6.5792303, -0.24773091, -0.41248468, -0.08972627, -4.9243784, 4.3886485, 11.542179, 19.894327, -1.2423449)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch230" type="MeshInstance3D" parent="tree/Cube" unique_id=1143262369]
+transform = Transform3D(-3.6594567, 5.2548084, -1.5852913, 2.497446, -0.10253068, -6.104918, -4.8876295, -3.9867609, -1.9325113, 11.180709, 20.548088, -0.5048393)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch231" type="MeshInstance3D" parent="tree/Cube" unique_id=974480872]
+transform = Transform3D(5.49316, 1.795001, -3.1813426, 0.8003651, -6.1972103, -2.1146607, -3.564041, 1.3748991, -5.3781996, 11.210917, 18.446148, -0.6282232)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch232" type="MeshInstance3D" parent="tree/Cube" unique_id=818942964]
+transform = Transform3D(-2.212071, -3.5940177, 5.0702605, -5.6293755, 3.439123, -0.018206015, -2.6333704, -4.3328094, -4.2201767, 10.852913, 20.156933, -0.8183015)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch233" type="MeshInstance3D" parent="tree/Cube" unique_id=606720015]
+transform = Transform3D(1.5088814, 3.4165945, -5.4376397, -5.3062015, 3.809628, 0.9212679, 3.6173575, 4.163099, 3.6195445, 11.180709, 20.548088, -0.5048393)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch234" type="MeshInstance3D" parent="tree/Cube" unique_id=253928011]
+transform = Transform3D(0.1071682, 6.518249, -1.0093174, -5.5125475, -0.4657887, -3.5934143, -3.621892, 0.9018025, 5.4393396, 11.159251, 18.329979, -1.2224125)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch235" type="MeshInstance3D" parent="tree/Cube" unique_id=114287857]
+transform = Transform3D(-4.5670953, 1.8145753, 4.4007645, 0.27574694, 6.1893077, -2.2658792, -4.752197, -1.3847609, -4.360829, 11.068512, 19.927952, -1.5120353)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch236" type="MeshInstance3D" parent="tree/Cube" unique_id=1901887238]
+transform = Transform3D(-3.3191907, 5.2843966, 2.1391346, -5.691142, -2.9263046, -1.6016914, -0.3341337, -2.651352, 6.0312905, 10.76002, 20.510876, -0.9859088)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch237" type="MeshInstance3D" parent="tree/Cube" unique_id=251513481]
+transform = Transform3D(-2.203401, 6.1396165, -0.98382276, 4.988454, 1.122359, -4.168142, -3.711889, -2.1361637, -5.017615, 11.159251, 18.329979, -1.2224125)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch238" type="MeshInstance3D" parent="tree/Cube" unique_id=1396918656]
+transform = Transform3D(-4.4820433, 3.3224995, -3.5199485, -1.186053, -5.404863, -3.5914476, -4.6927934, -1.8072674, 4.2695694, 14.410933, 23.48066, -3.193485)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch239" type="MeshInstance3D" parent="tree/Cube" unique_id=818206097]
+transform = Transform3D(-4.464389, 4.4674797, -1.9048896, -0.99058056, -3.3706384, -5.583483, -4.7545485, -3.4925878, 2.9519224, 13.264269, 22.231817, -3.0589328)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch240" type="MeshInstance3D" parent="tree/Cube" unique_id=1036930366]
+transform = Transform3D(-2.6891122, -1.106123, 5.921396, -4.4888864, 4.692261, -1.1620395, -4.017007, -4.5029893, -2.6654263, 11.722116, 21.227959, -1.9244702)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch241" type="MeshInstance3D" parent="tree/Cube" unique_id=446567997]
+transform = Transform3D(-3.9697738, 4.5553946, 2.6470764, 5.2667856, 3.519217, 1.8422318, -0.13999887, 3.2219923, -5.754729, 13.024254, 21.897457, -3.0558412)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch242" type="MeshInstance3D" parent="tree/Cube" unique_id=1935223091]
+transform = Transform3D(-0.8807838, 6.409599, -1.2880405, 0.5231835, -1.2264055, -6.46065, -6.516771, -0.964758, -0.34459093, 13.350971, 22.033266, -3.3030112)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch243" type="MeshInstance3D" parent="tree/Cube" unique_id=34987650]
+transform = Transform3D(-1.415595, 5.8059063, -2.793797, 5.060943, 2.772239, 3.1967666, 3.98757, -1.4573612, -5.0490737, 12.048387, 21.101164, -2.1097531)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch244" type="MeshInstance3D" parent="tree/Cube" unique_id=390883199]
+transform = Transform3D(3.8384235, 4.889018, 2.2094731, 5.3278723, -3.1540742, -2.276699, -0.6309089, 3.109193, -5.783826, -7.705905, 10.060961, -2.2455292)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch245" type="MeshInstance3D" parent="tree/Cube" unique_id=194058421]
+transform = Transform3D(-4.3558235, 4.6120877, 1.8092082, -4.7842555, -3.2902098, -3.131006, -1.2866538, -3.3794906, 5.517368, -7.789084, 11.019759, -2.6929507)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch246" type="MeshInstance3D" parent="tree/Cube" unique_id=1766561714]
+transform = Transform3D(-5.8648005, -2.7972736, -1.1389114, 0.111819044, 2.2847962, -6.1874833, 3.0181706, -5.5202103, -1.983854, -5.4419026, 9.903435, -0.95621115)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch247" type="MeshInstance3D" parent="tree/Cube" unique_id=1725147889]
+transform = Transform3D(-2.9478939, 2.350228, -5.4133277, -5.4261155, -3.4587936, 1.4532018, -2.3205533, 5.1020546, 3.4787712, -7.705905, 10.060961, -2.2455292)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch248" type="MeshInstance3D" parent="tree/Cube" unique_id=764420780]
+transform = Transform3D(-1.7861477, 6.2465196, -1.1438717, -4.737131, -2.1019692, -4.0815544, -4.229307, -0.28371182, 5.054724, -7.789084, 11.019759, -2.6929507)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch249" type="MeshInstance3D" parent="tree/Cube" unique_id=375360093]
+transform = Transform3D(-5.860132, 2.7096355, -1.3544427, 2.8013773, 3.724937, -4.668503, -1.1527901, -4.7223415, -4.4596367, -5.241417, 11.8196945, 5.1430535)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch250" type="MeshInstance3D" parent="tree/Cube" unique_id=2010265926]
+transform = Transform3D(-2.7263665, 4.758143, -3.666712, -4.65065, -4.2205772, -2.018901, -3.8021247, 1.7505958, 5.0987287, -5.750662, 13.415367, 6.007792)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch251" type="MeshInstance3D" parent="tree/Cube" unique_id=971194791]
+transform = Transform3D(-6.0424185, 1.7899466, -1.9501382, 2.2640874, 0.9767912, -6.118624, -1.3714423, -6.2737346, -1.509031, -6.3898325, 13.279614, 6.7821116)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch252" type="MeshInstance3D" parent="tree/Cube" unique_id=1088094572]
+transform = Transform3D(4.575394, -4.002221, 2.562375, -0.45459706, -3.909265, -5.29422, 4.73042, 3.4953768, -2.9871798, -3.8477216, 9.40569, 2.4410546)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch253" type="MeshInstance3D" parent="tree/Cube" unique_id=168497568]
+transform = Transform3D(-0.49664444, 0.69383913, 6.5413837, -6.5743494, 0.1684761, -0.5170175, -0.22143973, -6.5580463, 0.6787941, -4.3207617, 10.989468, 3.5108135)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch254" type="MeshInstance3D" parent="tree/Cube" unique_id=1338521911]
+transform = Transform3D(-5.341385, -3.2483675, 2.1060545, -3.8710454, 4.5265427, -2.8360484, -0.04860195, -3.5321772, -5.5712757, -4.2247252, 11.3585, 3.8168252)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch255" type="MeshInstance3D" parent="tree/Cube" unique_id=1832578919]
+transform = Transform3D(-1.7955744, 5.3951774, -3.3445065, -6.2281175, -2.1689265, -0.15508696, -1.22646, 3.1153772, 5.6840096, -3.4166312, 10.471043, 1.9157898)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch256" type="MeshInstance3D" parent="tree/Cube" unique_id=145090368]
+transform = Transform3D(-1.0196394, 6.504791, -0.40716094, -1.9900761, -0.7031632, -6.2500324, -6.2062607, -0.8432118, 2.0710049, -1.5913597, 15.923273, 7.7606297)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch257" type="MeshInstance3D" parent="tree/Cube" unique_id=374290278]
+transform = Transform3D(-2.5140085, 5.9717827, 1.2390786, 6.0354056, 2.2429242, 1.435588, 0.87828386, 1.6807282, -6.318347, -1.3010933, 16.507793, 8.079373)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch258" type="MeshInstance3D" parent="tree/Cube" unique_id=1128382307]
+transform = Transform3D(2.0118852, 6.2502646, -0.6358444, 0.40366113, -0.7948751, -6.536285, -6.269543, 1.9545211, -0.62487656, -5.055976, 11.412271, 5.516941)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch259" type="MeshInstance3D" parent="tree/Cube" unique_id=1244555019]
+transform = Transform3D(5.7935452, 2.5535264, 1.8525858, -3.0516343, 5.5185184, 1.9368086, -0.8000604, -2.5579693, 6.027806, -5.026082, 13.345603, 5.9022646)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch260" type="MeshInstance3D" parent="tree/Cube" unique_id=651297353]
+transform = Transform3D(-4.609763, 0.06506152, -4.718432, 4.0381856, 3.4671714, -3.8973744, 2.4414942, -5.6117954, -2.4626439, -5.7136726, 13.792618, 6.1316395)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch261" type="MeshInstance3D" parent="tree/Cube" unique_id=801953404]
+transform = Transform3D(4.219064, 5.046275, 0.50238186, 4.3846993, -3.3016233, -3.659436, -2.547878, 2.674356, -5.4657035, -4.37183, 11.888088, 5.2406163)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch262" type="MeshInstance3D" parent="tree/Cube" unique_id=309225724]
+transform = Transform3D(0.36202902, 1.7709594, 6.3443217, 1.841086, 6.0734444, -1.8004049, -6.3243275, 1.8694277, -0.16094546, -5.423257, 12.776926, 6.51958)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch263" type="MeshInstance3D" parent="tree/Cube" unique_id=936133129]
+transform = Transform3D(3.095889, 5.44179, -2.0785007, -5.806782, 3.0701027, -0.6111634, 0.46316224, 2.1164045, 6.230897, -5.1457047, 13.469981, 6.2156553)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch264" type="MeshInstance3D" parent="tree/Cube" unique_id=224857547]
+transform = Transform3D(-4.428963, -1.0805199, -4.7680817, 4.624871, 1.1600108, -4.558814, 1.5851483, -6.403491, -0.021280117, 0.3180086, 16.380215, 8.992555)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch265" type="MeshInstance3D" parent="tree/Cube" unique_id=1142050216]
+transform = Transform3D(-2.7796333, 5.414805, 2.5438929, -5.920491, -2.8928463, -0.3115703, 0.8598097, -2.4143724, 6.0786014, 2.6003826, 15.970627, 9.363596)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch266" type="MeshInstance3D" parent="tree/Cube" unique_id=1890685181]
+transform = Transform3D(-1.5087446, 3.9307907, 5.0784264, -5.5995293, 1.7489899, -3.017307, -3.1443276, -5.000777, 2.9365423, 2.9575384, 15.837654, 9.695225)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch267" type="MeshInstance3D" parent="tree/Cube" unique_id=1437524718]
+transform = Transform3D(-6.1151, 1.5636365, 1.9179207, 1.0591377, 6.2747827, -1.7387282, -2.236427, -1.3038367, -6.067638, 0.3180086, 16.380215, 8.992555)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch268" type="MeshInstance3D" parent="tree/Cube" unique_id=919270817]
+transform = Transform3D(4.3229513, 3.4009748, -3.641872, -4.950271, 2.3798285, -3.6536283, -0.56980145, 5.1271396, 4.111634, -1.9165318, 15.673725, 8.351514)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch269" type="MeshInstance3D" parent="tree/Cube" unique_id=90187265]
+transform = Transform3D(-6.375824, -0.32546884, -1.6615368, 1.5371667, -3.826556, -5.149014, -0.70975643, -5.3637023, 3.774215, -1.082078, 16.114914, 8.020309)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch270" type="MeshInstance3D" parent="tree/Cube" unique_id=1002053956]
+transform = Transform3D(0.38950622, -2.299684, 6.1706986, -6.58529, -0.14024755, 0.3634089, 0.0045021395, -6.1813884, -2.3039525, -3.9396746, 14.407048, 7.213152)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch271" type="MeshInstance3D" parent="tree/Cube" unique_id=1838597238]
+transform = Transform3D(-5.034538, 4.2624717, 0.05048236, -3.785327, -4.506268, 2.9803748, 1.96023, 2.2455924, 5.8849454, -1.9165318, 15.673725, 8.351514)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch272" type="MeshInstance3D" parent="tree/Cube" unique_id=1136325261]
+transform = Transform3D(-4.362778, 4.863283, 0.91235965, -0.20241398, 1.0399237, -6.5111694, -4.943981, -4.3341427, -0.53852767, -1.082078, 16.114914, 8.020309)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch273" type="MeshInstance3D" parent="tree/Cube" unique_id=2042517813]
+transform = Transform3D(2.597222, 5.7612014, -1.8922957, -3.767244, -0.08017281, -5.414723, -4.751852, 3.2124631, 3.2584913, -4.5967383, 14.688467, 7.368812)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch274" type="MeshInstance3D" parent="tree/Cube" unique_id=1211492513]
+transform = Transform3D(-2.5777285, -5.451252, -2.6752439, 6.0711856, -2.3698359, -1.0209528, -0.117392965, -2.8610306, 5.9429355, -2.3036177, 15.95472, 8.578806)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch275" type="MeshInstance3D" parent="tree/Cube" unique_id=1514782637]
+transform = Transform3D(0.10262911, 4.1525145, 5.1248274, -4.069288, 4.0736694, -3.2192976, -5.191159, -3.111206, 2.624887, -1.5310657, 16.009615, 8.693444)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch276" type="MeshInstance3D" parent="tree/Cube" unique_id=114765072]
+transform = Transform3D(4.4959393, 3.9807453, 2.7309248, -1.6519365, 4.775213, -4.2410145, -4.53601, 2.2065296, 4.2513046, -4.5275736, 14.310375, 7.665867)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch277" type="MeshInstance3D" parent="tree/Cube" unique_id=1091473144]
+transform = Transform3D(-4.0403204, -3.4380372, -3.920909, 4.2303853, -5.061174, 0.07865125, -3.0491745, -2.4662225, 5.3045344, 3.4498868, 15.762333, 9.571873)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch278" type="MeshInstance3D" parent="tree/Cube" unique_id=1956977141]
+transform = Transform3D(4.4139495, 4.3325167, 2.2943673, -4.9011936, 3.971827, 1.9289025, -0.11457473, -2.9952722, 5.8764787, 3.013146, 15.649773, 9.673079)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch279" type="MeshInstance3D" parent="tree/Cube" unique_id=1611800333]
+transform = Transform3D(-3.0210555, 4.2880225, -4.0004845, 3.5523205, -2.2424746, -5.0862665, -4.666051, -4.4835224, -1.2821045, 0.28529054, 16.137304, 9.170823)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch280" type="MeshInstance3D" parent="tree/Cube" unique_id=548968865]
+transform = Transform3D(0.7260934, 4.548686, -4.7222905, 5.150719, -3.335635, -2.421038, -4.0571756, -3.4206424, -3.918714, 2.5776734, 15.702616, 9.492446)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch281" type="MeshInstance3D" parent="tree/Cube" unique_id=1406563509]
+transform = Transform3D(-2.2166026, -0.80596256, 6.1607533, -6.202508, 0.67146623, -2.1437833, -0.36516616, -6.51286, -0.9834104, 3.1950955, 15.662308, 9.398628)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch282" type="MeshInstance3D" parent="tree/Cube" unique_id=55724264]
+transform = Transform3D(-3.422228, -2.605193, 5.0019097, -5.587564, 2.3599048, -2.5937915, -0.7650231, -5.5822573, -3.4308774, -7.6546407, 11.977316, -4.395398)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch283" type="MeshInstance3D" parent="tree/Cube" unique_id=1119407557]
+transform = Transform3D(0.67111653, -2.7785275, -5.9453473, -5.230122, 3.3834422, -2.1716151, 3.9639878, 4.9345593, -1.8586819, -7.631421, 12.767106, -5.818553)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch284" type="MeshInstance3D" parent="tree/Cube" unique_id=1045619391]
+transform = Transform3D(3.8134637, 4.396986, -3.1051183, 3.4041996, -4.917746, -2.782975, -4.169732, 0.006416809, -5.111853, -7.250228, 11.3101, -3.3022337)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch285" type="MeshInstance3D" parent="tree/Cube" unique_id=1424645332]
+transform = Transform3D(-0.9203765, -2.5948987, 5.994763, -6.5304203, 0.22108136, -0.9069187, 0.15583792, -6.060973, -2.599633, -4.977298, 9.874985, -1.5979385)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch286" type="MeshInstance3D" parent="tree/Cube" unique_id=214659341]
+transform = Transform3D(-5.821061, 2.9734013, 0.8899075, 3.1030316, 5.535719, 1.8013371, 0.06515589, 2.0081098, -6.2833953, -7.343368, 9.970185, -2.739494)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch287" type="MeshInstance3D" parent="tree/Cube" unique_id=101841623]
+transform = Transform3D(3.9925983, 4.268198, -3.0593185, -4.7374377, 1.269353, -4.411712, -2.265751, 4.867137, 3.8334239, -8.211022, 10.00498, -2.6063585)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch288" type="MeshInstance3D" parent="tree/Cube" unique_id=39543333]
+transform = Transform3D(6.1026726, 2.335796, 0.90512586, 2.4805095, -5.9673867, -1.3248321, 0.34966907, 1.565939, -6.398701, -5.497158, 9.297776, -1.0828903)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch289" type="MeshInstance3D" parent="tree/Cube" unique_id=1715688949]
+transform = Transform3D(-0.87657595, 5.4540777, 3.6058912, 1.2995735, 3.7109017, -5.296992, -6.40785, 0.0065039583, -1.5675567, -7.343368, 9.970185, -2.739494)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch290" type="MeshInstance3D" parent="tree/Cube" unique_id=1554275813]
+transform = Transform3D(4.1392713, 4.239419, 2.9002662, -4.9361725, 4.3132677, 0.7400738, -1.4207097, -2.6345468, 5.878651, -8.211022, 10.00498, -2.6063585)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch291" type="MeshInstance3D" parent="tree/Cube" unique_id=1950228745]
+transform = Transform3D(-0.2934625, 6.0326433, -2.653091, 2.6105263, -2.3320713, -5.5914574, -6.051185, -1.2986362, -2.2835302, -5.497158, 9.297776, -1.0828903)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch292" type="MeshInstance3D" parent="tree/Cube" unique_id=1682676859]
+transform = Transform3D(-4.9997396, -3.3491604, -2.7025032, 3.4863002, -5.5808544, 0.46644998, -2.5231159, -1.0747042, 5.9997234, -7.102204, 15.2833, -7.791359)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch293" type="MeshInstance3D" parent="tree/Cube" unique_id=468345337]
+transform = Transform3D(-5.8669124, -1.5007939, 2.6162431, -0.81729287, -4.7170224, -4.53867, 2.9032974, -4.360633, 4.0091815, -7.6620398, 12.828737, -6.134764)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch294" type="MeshInstance3D" parent="tree/Cube" unique_id=616546854]
+transform = Transform3D(0.27279148, 6.2185383, 2.1847532, 6.5829797, -0.14816387, -0.4002367, -0.3282175, 2.1967275, -6.2116365, -8.081226, 11.420037, -4.0570817)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch295" type="MeshInstance3D" parent="tree/Cube" unique_id=130719822]
+transform = Transform3D(3.7378669, 5.4300876, -0.24551965, -4.266609, 2.7463648, -4.215602, -3.3678155, 2.5474312, 5.0681543, -7.859461, 12.0926, -5.807906)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch296" type="MeshInstance3D" parent="tree/Cube" unique_id=1551594674]
+transform = Transform3D(-3.8918216, 5.1228685, -1.4586667, 5.2027802, 3.2690268, -2.4004803, -1.1412997, -2.566603, -5.9688983, -7.6620398, 12.828737, -6.134764)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch297" type="MeshInstance3D" parent="tree/Cube" unique_id=593269700]
+transform = Transform3D(4.202921, 4.7935715, -1.6955535, -3.6305685, 1.2891184, -5.354896, -3.5598023, 4.3448386, 3.459473, -8.081226, 11.420037, -4.0570817)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch298" type="MeshInstance3D" parent="tree/Cube" unique_id=1966603305]
+transform = Transform3D(-6.1397243, -1.8522859, -1.5461533, 1.9145099, -1.1673179, -6.204013, 1.4684019, -6.222876, 1.6240038, -7.444937, 12.833651, -6.1286616)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch299" type="MeshInstance3D" parent="tree/Cube" unique_id=2037856376]
+transform = Transform3D(-0.031126488, -3.9537473, 5.280595, -3.6375005, 4.415589, 3.2846503, -5.503216, -2.8962414, -2.2009466, -7.5206375, 12.550539, -6.5514083)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch300" type="MeshInstance3D" parent="tree/Cube" unique_id=506950114]
+transform = Transform3D(0.029246211, 4.2234087, -5.0675178, -6.5953684, -0.08444681, -0.1084442, -0.13429843, 5.066899, 4.2221174, -7.33332, 14.063482, -7.0413623)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="Tree Branch301" type="MeshInstance3D" parent="tree/Cube" unique_id=474806724]
+transform = Transform3D(-1.9645982, 4.35208, -4.55165, 2.4664297, -3.8553472, -4.750872, -5.7943807, -3.1166456, -0.47900355, -7.1837473, 14.959063, -7.7306867)
+mesh = SubResource("ArrayMesh_1mcwy")
+skeleton = NodePath("")
+
+[node name="tree2" parent="." unique_id=582270449 instance=ExtResource("23_dsok1")]
+transform = Transform3D(0.0965748, 0, -0.39541575, 0, 0.40703845, 0, 0.39541575, 0, 0.0965748, -5.415596, 2.1138935, 14.538124)
+
+[node name="tree3" parent="." unique_id=1981454062 instance=ExtResource("24_kxg2o")]
+transform = Transform3D(0.42612356, 0, 0.55123997, 0.07726079, 0.68986267, -0.0597247, -0.5457987, 0.09765382, 0.42191735, 11.970491, 1.4551096, 1.657507)
