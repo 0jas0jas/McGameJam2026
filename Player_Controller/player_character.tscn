@@ -2254,7 +2254,7 @@ mesh = SubResource("ArrayMesh_kn6m3")
 skeleton = NodePath("")
 
 [node name="blasterP2" type="Node3D" parent="Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models" unique_id=1951135452]
-transform = Transform3D(-0.97236997, -0.2334076, -0.0040748655, 0, 0.01745548, -0.999848, 0.23344313, -0.9722221, -0.016973201, 0.32, 1.014, -0.35)
+transform = Transform3D(-0.97236997, -0.23340762, -0.0040748655, 0, 0.01745548, -0.999848, 0.23344313, -0.97222215, -0.016973201, 0.32, 1.014, -0.35)
 visible = false
 
 [node name="blasterP" type="MeshInstance3D" parent="Camera/LeanPivot/MainCamera/Weapons_Manager/Weapons_Models/blasterP2" unique_id=1657450221]
@@ -2305,7 +2305,7 @@ collision_mask = 5
 debug_shape_custom_color = Color(0, 0, 1, 1)
 
 [node name="BodyCollision" type="CollisionShape3D" parent="." unique_id=301742336]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.85, 0)
 shape = SubResource("CapsuleShape3D_73v4a")
 
 [node name="PickUpDetection" type="Area3D" parent="." unique_id=1304943396]
@@ -2329,7 +2329,7 @@ parameters/left_collision_blend/blend_amount = 0.0
 parameters/right_collision_blend/blend_amount = 0.0
 
 [node name="CrouchCollider" type="ShapeCast3D" parent="." unique_id=926257705]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.85, 0)
 shape = SubResource("SphereShape3D_cx3sy")
 target_position = Vector3(0, 0.4, 0)
 

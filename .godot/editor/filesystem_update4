@@ -1,2 +1,4 @@
 res://Example World/Objects/World/world.tscn
-res://Example World/Objects/World/world.tres
+res://grass.gdshader
+res://Player_Controller/player_character.tscn
+res://node_3d.tscn
