@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://p4dqlsdmk7hr"]
+
+[ext_resource type="PackedScene" uid="uid://dheiwcfoujdsb" path="res://assets/4_sided_dice.glb" id="1_tajl0"]
+[ext_resource type="Script" uid="uid://b3ft0cl4awmg1" path="res://scripts/die.gd" id="1_y7wgn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t152j"]
+
+[node name="D4" type="RigidBody3D" unique_id=923591347]
+gravity_scale = 2.0
+freeze = true
+script = ExtResource("1_y7wgn")
+
+[node name="Sketchfab_Scene" parent="." unique_id=948772597 instance=ExtResource("1_tajl0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.265204, -10.767678, 4.6344485)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1394736559]
+transform = Transform3D(19.27177, 0, 0, 0, 13.101012, 0, 0, 0, 15.303872, 0, 0, 0)
+shape = SubResource("BoxShape3D_t152j")
